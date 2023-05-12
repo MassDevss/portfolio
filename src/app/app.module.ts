@@ -6,18 +6,20 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NavComponent } from './components/nav/nav.component';
+import {NgOptimizedImage} from "@angular/common";
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     ContactComponent,
-    NavComponent
+    NavComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        NgOptimizedImage
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
