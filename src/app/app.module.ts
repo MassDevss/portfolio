@@ -7,6 +7,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { NavComponent } from './components/nav/nav.component';
 import {NgOptimizedImage} from "@angular/common";
+import { TitleComponent } from './components/title/title.component';
+import { CircleComponent } from './components/circle/circle.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import {NgOptimizedImage} from "@angular/common";
     HomeComponent,
     ContactComponent,
     NavComponent,
+    TitleComponent,
+    CircleComponent,
   ],
     imports: [
         BrowserModule,

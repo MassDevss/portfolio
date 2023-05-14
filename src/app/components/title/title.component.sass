@@ -1,0 +1,48 @@
+
+.title-h-wrap
+  color: #fff
+  font-size: 80px
+  font-family: 'Inconsolata', monospace
+  font-weight: 400
+  text-decoration: underline
+
+  animation: spacecer infinite 3s
+
+@mixin transition-property($property...)
+    -moz-transition-property:    $property
+    -o-transition-property:      $property
+    -webkit-transition-property: $property
+    transition-property:         $property
+
+@mixin transition-duration($duration...)
+    -moz-transition-duration:    $duration
+    -o-transition-duration:      $duration
+    -webkit-transition-duration: $duration
+    transition-duration:         $duration
+
+.title-h-wrap span
+  position: relative
+  cursor: pointer
+  bottom: 0rem
+  @include transition-property(bottom)
+  @include transition-duration(0.2s)
+
+.title-h-wrap span:hover
+  bottom: 1.2rem
+
+.sub-title
+  margin-top: 10px
+  color: #fff
+  font-size: 30px
+  font-family: 'Inconsolata', monospace
+
+.sub-title h3
+  font-weight: normal
+
+@keyframes spacecer
+  0%
+    letter-spacing: 0px
+  50%
+    letter-spacing: 2px
+  100%
+    letter-spacing: 0px
