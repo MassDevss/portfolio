@@ -9,6 +9,8 @@ import { NavComponent } from './components/nav/nav.component';
 import {NgOptimizedImage} from "@angular/common";
 import { TitleComponent } from './components/title/title.component';
 import { CircleComponent } from './components/circle/circle.component';
+import { AboutMeComponent } from './components/about-me/about-me.component';
+import { TextBoxComponent } from './components/text-box/text-box.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +20,8 @@ import { CircleComponent } from './components/circle/circle.component';
     NavComponent,
     TitleComponent,
     CircleComponent,
+    AboutMeComponent,
+    TextBoxComponent,
   ],
     imports: [
         BrowserModule,

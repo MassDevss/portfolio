@@ -2,7 +2,6 @@
 $purple:#692c81
 $withe: #fff
 
-
 .main-home
   overflow: hidden
 
@@ -28,5 +27,94 @@ $withe: #fff
 
     img
       border-radius: 50%
-      width: 90%
+      width: 96%
       height: auto
+
+
+.first
+  position: absolute
+  animation-name: circle1
+  animation-duration: 28s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
+.second
+  position: absolute
+  animation-name: circle2
+  animation-duration: 38s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
+.third
+  position: absolute
+  animation-name: circle3
+  animation-duration: 24s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
+.fourth
+  position: absolute
+  animation-name: circle4
+  animation-duration: 32s
+  animation-delay: 2s
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+  left: -10vw
+
+@keyframes circle1
+  0%
+    left: -20vw
+    top: 11vh
+  99.99%
+    left: 100vw
+    top: 90vh
+  100%
+    left: -20vw
+
+@keyframes circle2
+  0%
+    left: 120vw
+    top: 11vh
+  99.99%
+    left: 0vw
+    top: 36vh
+  100%
+    left: 120vw
+
+@keyframes circle3
+  0%
+    left: -20vw
+    top: 94vh
+  99.99%
+    left: 100vw
+    top: 56vh
+  100%
+    left: -20vw
+
+@keyframes circle4
+  0%
+    left: -20vw
+    top: 48vh
+  99.99%
+    left: 100vw
+    top: -10vh
+  100%
+    left: -20vw
+
+.arrow-down
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  position: relative
+  top: -2rem
+
+.scroll-down-description
+  cursor: pointer
+  width: 3.5rem
+  height: 3.5rem
+  fill: #0d0d0d
+
+.css-filter
+  filter: drop-shadow(2px 0 0 #692c81)drop-shadow(-2px 0 0 #692c81)drop-shadow(0 2px 0 #692c81)drop-shadow(0 -2px 0 #692c81)drop-shadow(1px 0 0 #692c81)drop-shadow(-1px 0 0 #692c81)drop-shadow(0 -1px 0 #692c81)drop-shadow(0 1px 0 #692c81)

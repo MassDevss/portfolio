@@ -7,19 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class CircleComponent {
 
-  @Input()
-  top: string = "";
-
-  @Input()
-  left: string = "";
-
-  @Input()
-  rigth: string = "";
-
-  @Input()
-  bottom: string = "";
-
-
   setLocation() {
     return
   }

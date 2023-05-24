@@ -4,9 +4,13 @@
 
 <main class="main-home">
 
-  <div class="intro">
 
-    <app-circle [left]="leftStyle" [top]="topStyle"></app-circle>
+  <app-circle class="first"></app-circle>
+  <app-circle class="second"></app-circle>
+  <app-circle class="third"></app-circle>
+  <app-circle class="fourth"></app-circle>
+
+  <div class="intro">
 
     <div class="left-intro">
       <app-title></app-title>
@@ -14,19 +18,22 @@
 
     <div class="image-intro">
       <div class="image-wrap">
-
-<!--        <app-circle [left]="" [top]=""></app-circle>-->
-<!--        <app-circle [left]="" [top]=""></app-circle>-->
-
         <img ngSrc="../../../assets/images/me.jpeg" alt="" width="612" height="612">
       </div>
     </div>
 
   </div>
 
-  <div class="arrow-down">
 
+  <div class="arrow-down">
+      <svg class="css-filter scroll-down-description bi bi-caret-down-fill" xmlns="http://www.w3.org/2000/svg" fill="purple" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+      </svg>
   </div>
+
+
+  <app-about-me></app-about-me>
+
 
 </main>
 
