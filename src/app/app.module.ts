@@ -11,6 +11,7 @@ import { TitleComponent } from './components/title/title.component';
 import { CircleComponent } from './components/circle/circle.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { TextBoxComponent } from './components/text-box/text-box.component';
+import { SwithLanguageComponent } from './components/swith-language/swith-language.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { TextBoxComponent } from './components/text-box/text-box.component';
     CircleComponent,
     AboutMeComponent,
     TextBoxComponent,
+    SwithLanguageComponent,
   ],
     imports: [
         BrowserModule,
