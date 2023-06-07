@@ -5,8 +5,13 @@
   font-family: 'Inconsolata', monospace
   font-weight: 400
   text-decoration: underline
-
   animation: spacecer infinite 3s
+  transition-property: font-size
+  transition-duration: 1s
+
+  @media (max-width: 1400px)
+    font-size: 70px
+
 
 @mixin transition-property($property...)
     -moz-transition-property:    $property

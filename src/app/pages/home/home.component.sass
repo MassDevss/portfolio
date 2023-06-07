@@ -6,7 +6,7 @@ $withe: #fff
   overflow: hidden
 
 .intro
-  margin-top: 10%
+  margin-top: 12rem
   display: flex
   justify-content: space-around
 
@@ -24,41 +24,42 @@ $withe: #fff
     display: flex
     justify-content: center
 
+  .image-wrap
+    display: flex
+    justify-content: center
 
     img
+      box-shadow: #653793 0rem 0rem 4rem
       border-radius: 50%
       width: 96%
       height: auto
 
+      transition-property: width
+      transition-duration: 1s
+
+      @media (max-width: 1400px)
+        width: 88%
+
+
+@mixin circle_conf($name, $duration)
+  position: absolute
+  animation-name: $name
+  animation-duration: $duration
+  animation-iteration-count: infinite
+  animation-timing-function: linear
 
 .first
-  position: absolute
-  animation-name: circle1
-  animation-duration: 28s
-  animation-iteration-count: infinite
-  animation-timing-function: linear
+  @include circle_conf($name: circle1 , $duration: 28s)
 
 .second
-  position: absolute
-  animation-name: circle2
-  animation-duration: 38s
-  animation-iteration-count: infinite
-  animation-timing-function: linear
+  @include circle_conf($name: circle2 , $duration: 38s)
 
 .third
-  position: absolute
-  animation-name: circle3
-  animation-duration: 24s
-  animation-iteration-count: infinite
-  animation-timing-function: linear
+  @include circle_conf($name: circle3 , $duration: 24s)
 
 .fourth
-  position: absolute
-  animation-name: circle4
-  animation-duration: 32s
+  @include circle_conf($name: circle4 , $duration: 32s)
   animation-delay: 2s
-  animation-iteration-count: infinite
-  animation-timing-function: linear
   left: -10vw
 
 @keyframes circle1

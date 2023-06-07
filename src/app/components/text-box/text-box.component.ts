@@ -8,7 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 export class TextBoxComponent implements OnInit{
 
   @Input()
-  title: string = "Default";
+  textTitle: string = "Default";
 
   @Input()
   textContent: string = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus at et ex officia quia? Amet deserunt eum illo labore nesciunt optio ratione, ut voluptatibus.";
