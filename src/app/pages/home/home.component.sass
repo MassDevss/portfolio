@@ -9,12 +9,26 @@ $withe: #fff
   margin-top: 12rem
   display: flex
   justify-content: space-around
+  flex-wrap: wrap
+  transition-property: margin-top
+  transition-duration: 1s
+
+  @media (max-width: 950px)
+    margin-top: 4rem
+    flex-direction: column-reverse
 
   .left-intro
     font-family: 'Inconsolata', monospace
     font-weight: 400
     text-align: center
     width: 50%
+
+    transition-property: margin-top
+    transition-duration: 1s
+
+    @media (max-width: 950px)
+      width: 100%
+      margin-top: 2rem
 
   .image-intro
     position: relative
@@ -23,6 +37,10 @@ $withe: #fff
     width: 50%
     display: flex
     justify-content: center
+
+    @media (max-width: 950px)
+      width: 100%
+      bottom: 0rem
 
   .image-wrap
     display: flex
@@ -40,6 +58,11 @@ $withe: #fff
       @media (max-width: 1400px)
         width: 88%
 
+      @media (max-width: 1200px)
+        width: 68%
+
+      @media (max-width: 950px)
+        width: 76%
 
 @mixin circle_conf($name, $duration)
   position: absolute
@@ -108,8 +131,14 @@ $withe: #fff
   align-items: center
   flex-direction: column
 
+  transition-property: margin-top
+  transition-duration: 1s
+
   position: relative
-  top: -2rem
+  top: -1rem
+
+  @media (max-width: 950px)
+    margin-top: 3rem
 
 .scroll-down-description
   cursor: pointer
@@ -118,4 +147,4 @@ $withe: #fff
   fill: #0d0d0d
 
 .css-filter
-  filter: drop-shadow(2px 0 0 #692c81)drop-shadow(-2px 0 0 #692c81)drop-shadow(0 2px 0 #692c81)drop-shadow(0 -2px 0 #692c81)drop-shadow(1px 0 0 #692c81)drop-shadow(-1px 0 0 #692c81)drop-shadow(0 -1px 0 #692c81)drop-shadow(0 1px 0 #692c81)
+  filter: drop-shadow(1px 0 1px #692c81) drop-shadow(-1px 0 1px #692c81) drop-shadow(0 1px 1px #692c81) drop-shadow(0 -1px 1px #692c81) drop-shadow(0.5px 0 1px #692c81) drop-shadow(-0.5px 0 1px #692c81) drop-shadow(0 -0.5px 1px #692c81) drop-shadow(0 0.5px 1px #692c81)
