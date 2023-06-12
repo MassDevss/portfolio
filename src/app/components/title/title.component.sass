@@ -46,6 +46,11 @@
   font-size: 30px
   font-family: 'Inconsolata', monospace
 
+  span
+    animation-name: flicker
+    animation-duration: 4s
+    animation-iteration-count: infinite
+
 .sub-title h3
   font-weight: normal
   transition: font-size
@@ -64,3 +69,12 @@
     letter-spacing: 2px
   100%
     letter-spacing: 0px
+
+
+@keyframes flicker
+  0%
+    color: #fff
+  50%
+    color: rgb(116, 84, 210)
+  100%
+    color: #fff

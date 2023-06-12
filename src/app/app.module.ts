@@ -12,6 +12,8 @@ import { CircleComponent } from './components/circle/circle.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { TextBoxComponent } from './components/text-box/text-box.component';
 import { SwithLanguageComponent } from './components/swith-language/swith-language.component';
+import { ClearExtensionPipe } from './pipes/clear-extension.pipe';
+import { TechSectionComponent } from './components/tech-section/tech-section.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { SwithLanguageComponent } from './components/swith-language/swith-langua
     AboutMeComponent,
     TextBoxComponent,
     SwithLanguageComponent,
+    ClearExtensionPipe,
+    TechSectionComponent,
   ],
     imports: [
         BrowserModule,
