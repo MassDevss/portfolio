@@ -5,9 +5,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
   templateUrl: './title.component.html',
   styleUrls: ['./title.component.sass']
 })
-export class TitleComponent implements OnInit, OnDestroy{
-
-  animateInterval: any;
+export class TitleComponent implements OnInit, OnDestroy {
 
   constructor(){
 

@@ -1,0 +1,16 @@
+
+<div
+  (mouseover)="swapColors()"
+  (mouseleave)="outColors()"
+  [ngStyle]="{boxShadow: '0.4rem 0.5rem 0rem ' + toBodyColor}"
+  class="card-body">
+
+  <p [ngStyle]="{color: toUseColor}">
+    {{ techName }}
+  </p>
+
+  <div class="tech-ico">
+    <img ngSrc="../../../assets/images/tech-icons/{{ techName.toLowerCase() }}.png" width="256" height="256" alt="imagen o logo de {{ techName }}">
+  </div>
+</div>
+

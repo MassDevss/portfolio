@@ -14,6 +14,7 @@ import { TextBoxComponent } from './components/text-box/text-box.component';
 import { SwithLanguageComponent } from './components/swith-language/swith-language.component';
 import { ClearExtensionPipe } from './pipes/clear-extension.pipe';
 import { TechSectionComponent } from './components/tech-section/tech-section.component';
+import { TechCardComponent } from './components/tech-card/tech-card.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { TechSectionComponent } from './components/tech-section/tech-section.com
     SwithLanguageComponent,
     ClearExtensionPipe,
     TechSectionComponent,
+    TechCardComponent,
   ],
     imports: [
         BrowserModule,

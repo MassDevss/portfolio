@@ -49,7 +49,7 @@ $withe: #fff
     img
       box-shadow: #653793 0rem 0rem 4rem
       border-radius: 50%
-      width: 96%
+      width: 84%
       height: auto
 
       transition-property: width
@@ -71,16 +71,43 @@ $withe: #fff
   animation-iteration-count: infinite
   animation-timing-function: linear
 
-.first
+.c-1
   @include circle_conf($name: circle1 , $duration: 28s)
 
-.second
+.c-2
   @include circle_conf($name: circle2 , $duration: 38s)
 
-.third
+.c-3
   @include circle_conf($name: circle3 , $duration: 24s)
 
-.fourth
+.c-4
+  @include circle_conf($name: circle4 , $duration: 32s)
+
+
+//  c-5 to c-12 not have animation
+
+.c-5
+  @include circle_conf($name: circle1 , $duration: 28s)
+
+.c-6
+  @include circle_conf($name: circle2 , $duration: 38s)
+
+.c-7
+  @include circle_conf($name: circle3 , $duration: 24s)
+
+.c-8
+  @include circle_conf($name: circle4 , $duration: 32s)
+
+.c-9
+  @include circle_conf($name: circle1 , $duration: 28s)
+
+.c-10
+  @include circle_conf($name: circle2 , $duration: 38s)
+
+.c-11
+  @include circle_conf($name: circle3 , $duration: 24s)
+
+.c-12
   @include circle_conf($name: circle4 , $duration: 32s)
 
 @keyframes circle1

@@ -1,0 +1,36 @@
+
+$time: 0.8s
+
+.card-body
+  margin: 2rem
+  width: 12rem
+  background-color: #1f1f1f
+  border-radius: 1rem
+  display: flex
+  align-items: center
+  text-align: center
+  padding: 0.5rem
+  transition-property: box-shadow, transform
+  transition-duration: $time
+  transform: skew(0deg, 0deg) scale(1)
+
+  &:hover
+    transform: skew(0deg, 1deg) scale(1.05)
+
+
+  p
+    width: 50%
+    font-family: Roboto, sans-serif
+    font-size: 1.4rem
+    transition-property: color
+    transition-duration: $time
+
+  .tech-ico
+    width: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    img
+      width: 52%
+      height: auto
