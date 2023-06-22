@@ -15,6 +15,9 @@ import { SwithLanguageComponent } from './components/swith-language/swith-langua
 import { ClearExtensionPipe } from './pipes/clear-extension.pipe';
 import { TechSectionComponent } from './components/tech-section/tech-section.component';
 import { TechCardComponent } from './components/tech-card/tech-card.component';
+import { ProyectCardComponent } from './components/proyect-card/proyect-card.component';
+import { ProyectsComponent } from './components/proyects/proyects.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +33,9 @@ import { TechCardComponent } from './components/tech-card/tech-card.component';
     ClearExtensionPipe,
     TechSectionComponent,
     TechCardComponent,
+    ProyectCardComponent,
+    ProyectsComponent,
+    FooterComponent,
   ],
     imports: [
         BrowserModule,
