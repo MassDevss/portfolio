@@ -4,9 +4,11 @@
   <div class="proyect-card-wrap">
 
     <div class="proyect-img">
-      <a href="{{ proyectUrl }}" target="_blank">
+      <a *ngIf="proyectUrl !== ''" href="{{ proyectUrl }}" target="_blank">
         <img src="./assets/images/proyects/{{ proyectImageName }}">
       </a>
+
+        <img *ngIf="proyectUrl === ''" src="./assets/images/proyects/{{ proyectImageName }}">
     </div>
 
     <div class="proyect-text">

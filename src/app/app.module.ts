@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { ContactComponent } from './pages/contact/contact.component';
 import { NavComponent } from './components/nav/nav.component';
 import {NgOptimizedImage} from "@angular/common";
 import { TitleComponent } from './components/title/title.component';
@@ -18,12 +17,12 @@ import { TechCardComponent } from './components/tech-card/tech-card.component';
 import { ProyectCardComponent } from './components/proyect-card/proyect-card.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ContactComponent,
     NavComponent,
     TitleComponent,
     CircleComponent,
@@ -36,6 +35,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ProyectCardComponent,
     ProyectsComponent,
     FooterComponent,
+    ContactComponent,
   ],
     imports: [
         BrowserModule,
