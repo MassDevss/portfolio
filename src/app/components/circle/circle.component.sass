@@ -2,8 +2,17 @@
 $purple:#653793
 $withe: #fff
 
+@mixin circle_conf($delay)
+  animation-name: bigSmall
+  animation-duration: 1s
+  animation-delay: $delay
+  animation-iteration-count: infinite
+  animation-timing-function: linear
+
 
 .circle
+  overflow: hidden
+  animation-iteration-count: infinite
   opacity: 60%
   position: absolute
   z-index: -1
@@ -14,7 +23,3 @@ $withe: #fff
   background-color: $purple
   transition-property: top, bottom, left, right
   transition-duration: 1s
-  top: auto
-  bottom: auto
-  left: auto
-  right: auto

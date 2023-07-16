@@ -1,5 +1,5 @@
 
-import { Component, Input,  OnInit, Renderer2, ElementRef } from '@angular/core';
+import { Component, Input,  OnInit, Renderer2, ElementRef, AfterViewInit, OnDestroy, ViewChild } from '@angular/core';
 
 
 @Component({
@@ -7,7 +7,10 @@ import { Component, Input,  OnInit, Renderer2, ElementRef } from '@angular/core'
   templateUrl: './tech-card.component.html',
   styleUrls: ['./tech-card.component.sass']
 })
-export class TechCardComponent implements OnInit{
+export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
+
+  @ViewChild('cardBody')
+  cardElem: ElementRef<HTMLDivElement> | undefined;
 
   @Input()
   techName: string = '';
@@ -21,6 +24,8 @@ export class TechCardComponent implements OnInit{
 
   isFistView: boolean = true;
 
+  interval: any = null;
+
   constructor(private renderer: Renderer2, private elementRef: ElementRef) { }
 
   swapColors(): void {
@@ -32,7 +37,6 @@ export class TechCardComponent implements OnInit{
     this.toBodyColor = '#131313';
     this.toUseColor = '#fff';
   }
-
 
   callback = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
     entries.forEach(entry => {
@@ -47,13 +51,10 @@ export class TechCardComponent implements OnInit{
             setTimeout(() => {
               this.outColors()
             },1500)
-
-
           }
-      }
-    });
-  };
-
+        }
+      });
+    };
 
   ngOnInit() {
     const options = {
@@ -66,5 +67,33 @@ export class TechCardComponent implements OnInit{
     observer.observe(this.elementRef.nativeElement);
   }
 
+  ngAfterViewInit(): void {
+    this.interval = setInterval(() => {
+      const random = Math.floor(Math.random() * 10);
+      const card = this.cardElem?.nativeElement;
+
+      if (card){
+        if (random === 9){
+
+          setTimeout(() => {
+            this.swapColors();
+            card.classList.add('simulateHover');
+          }, 500)
+
+          setTimeout(() => {
+            this.outColors();
+            card.classList.remove('simulateHover');
+          },1500)
+
+        }
+      }
+
+    }, 1500)
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.interval);
+    this.interval = null;
+  }
 
 }

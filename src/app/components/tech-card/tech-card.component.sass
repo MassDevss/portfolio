@@ -1,6 +1,9 @@
 
 $time: 0.8s
 
+.simulateHover
+  transform: skew(0deg, 1deg) scale(1.05) !important
+
 .card-body
   margin: 2rem
   width: 12rem
@@ -17,15 +20,12 @@ $time: 0.8s
   &:hover
     transform: skew(0deg, 1deg) scale(1.05)
 
-
   p
     width: 50%
-
     font-size: 1.4rem
     transition-property: color
     transition-duration: $time
     font-family: 'Chivo', sans-serif
-
 
   .tech-ico
     width: 50%

@@ -67,174 +67,65 @@ $withe: #fff
       @media (max-width: 950px)
         width: 76%
 
-@mixin circle_conf($name, $duration)
+@mixin cConfig()
   position: absolute
-  animation-name: $name
-  animation-duration: $duration
-  animation-iteration-count: infinite
-  animation-timing-function: linear
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+
+
+// maximun values for circles
+// top: 84.5%
+// left: 92%
 
 .c-1
-  @include circle_conf($name: ca1 , $duration: 28s)
+  @include cConfig()
+  top: 84.5%
+  left: 92%
 
 .c-2
-  @include circle_conf($name: ca2 , $duration: 38s)
+  @include cConfig()
+  top: 31%
+  left: 5%
 
 .c-3
-  @include circle_conf($name: ca3 , $duration: 24s)
+  @include cConfig()
+  top: 37%
+  left: 37%
 
 .c-4
-  @include circle_conf($name: ca4 , $duration: 32s)
-
-
-//  c-5 to c-12 not have animation
+  @include cConfig()
+  top: 75%
+  left: 22%
 
 .c-5
-  @include circle_conf($name: ca5 , $duration: 28s)
+  @include cConfig()
+  top: 61%
+  left: 80%
 
 .c-6
-  @include circle_conf($name: ca6 , $duration: 38s)
+  @include cConfig()
+  top: 102%
+  left: 5%
 
 .c-7
-  @include circle_conf($name: ca7 , $duration: 24s)
+  @include cConfig()
 
 .c-8
-  @include circle_conf($name: ca8 , $duration: 32s)
+  @include cConfig()
 
 .c-9
-  @include circle_conf($name: ca9 , $duration: 28s)
+  @include cConfig()
 
 .c-10
-  @include circle_conf($name: ca10 , $duration: 38s)
+  @include cConfig()
 
 .c-11
-  @include circle_conf($name: ca11 , $duration: 24s)
+  @include cConfig()
 
 .c-12
-  @include circle_conf($name: ca12 , $duration: 32s)
-
-@keyframes ca1
-  0%
-    left: -20vw
-    top: 11vh
-  99.99%
-    left: 100vw
-    top: 90vh
-  100%
-    left: -20vw
-
-@keyframes ca2
-  0%
-    left: 120vw
-    top: 11vh
-  99.99%
-    left: -20vw
-    top: 36vh
-  100%
-    left: 120vw
-
-@keyframes ca3
-  0%
-    left: -20vw
-    top: 94vh
-  99.99%
-    left: 100vw
-    top: 56vh
-  100%
-    left: -20vw
-
-@keyframes ca4
-  0%
-    left: -20vw
-    top: 48vh
-  99.99%
-    left: 100vw
-    top: -10vh
-  100%
-    left: -20vw
-
-
-// change here this anmim,ations
-
-@keyframes ca5
-  0%
-    left: 120vw
-    top: 88vh
-  99.99%
-    left: -20vw
-    top: 120vh
-  100%
-    left: 120vw
-
-@keyframes ca6
-  0%
-    left: 120vw
-    top: 138vh
-  99.99%
-    left: -20vw
-    top: 170vh
-  100%
-    left: 120vw
-
-@keyframes ca7
-  0%
-    left: 120vw
-    top: 158vh
-  99.99%
-    left: -20vw
-    top: 60vh
-  100%
-    left: 120vw
-
-@keyframes ca8
-  0%
-    left: -20vw
-    top: 188vh
-  99.99%
-    left: 100vw
-    top: 200vh
-  100%
-    left: -20vw
-
-@keyframes ca9
-  0%
-    left: 120vw
-    top: 180vh
-  99.99%
-    left: -20vw
-    top: 170vh
-  100%
-    left: 120vw
-
-@keyframes ca10
-  0%
-    left: 120vw
-    top: 150vh
-  99.99%
-    left: -20vw
-    top: 120vh
-  100%
-    left: 120vw
-
-@keyframes ca11
-  0%
-    left: -20vw
-    top: 198vh
-  99.99%
-    left: 100vw
-    top: 120vh
-  100%
-    left: -20vw
-
-@keyframes ca12
-  0%
-    left: 120vw
-    top: 200vh
-  99.99%
-    left: -20vw
-    top: 140vh
-  100%
-    left: -20vw
+  @include cConfig()
 
 
 .scroll-down-description
