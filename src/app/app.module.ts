@@ -16,8 +16,8 @@ import { TechSectionComponent } from './components/tech-section/tech-section.com
 import { TechCardComponent } from './components/tech-card/tech-card.component';
 import { ProyectCardComponent } from './components/proyect-card/proyect-card.component';
 import { ProyectsComponent } from './components/proyects/proyects.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { ContactCardComponent } from './components/contact-card/contact-card.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +34,8 @@ import { ContactComponent } from './components/contact/contact.component';
     TechCardComponent,
     ProyectCardComponent,
     ProyectsComponent,
-    FooterComponent,
     ContactComponent,
+    ContactCardComponent,
   ],
     imports: [
         BrowserModule,
