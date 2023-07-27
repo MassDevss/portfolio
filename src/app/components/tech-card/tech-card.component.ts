@@ -69,23 +69,20 @@ export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
 
   ngAfterViewInit(): void {
     this.interval = setInterval(() => {
+
       const random = Math.floor(Math.random() * 12);
       const card = this.cardElem?.nativeElement;
 
-      if (card){
-        if (random === 11){
+      if (card && random === 11){
+        setTimeout(() => {
+          this.swapColors();
+          card.classList.add('simulateHover');
+        }, 500)
 
-          setTimeout(() => {
-            this.swapColors();
-            card.classList.add('simulateHover');
-          }, 500)
-
-          setTimeout(() => {
-            this.outColors();
-            card.classList.remove('simulateHover');
-          },1500)
-
-        }
+        setTimeout(() => {
+          this.outColors();
+          card.classList.remove('simulateHover');
+        },1500)
       }
 
     }, 1500)
