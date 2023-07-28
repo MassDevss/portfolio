@@ -65,8 +65,10 @@ $withe: #fff
       @media (max-width: 950px)
         width: 76%
 
-@mixin cConfig()
+@mixin cConfig($top, $left)
   position: absolute
+  top: $top
+  left: $left
 
 
 // maximun values for circles
@@ -74,52 +76,64 @@ $withe: #fff
 // left: 92%
 
 .c-1
-  @include cConfig()
-  top: 84.5%
-  left: 92%
+  @include cConfig(34rem, 110rem)
 
 .c-2
-  @include cConfig()
-  top: 31%
-  left: 5%
+  @include cConfig(9rem, 6rem)
 
 .c-3
-  @include cConfig()
-  top: 37%
-  left: 37%
+  @include cConfig(160rem, 102rem)
 
 .c-4
-  @include cConfig()
-  top: 75%
-  left: 22%
+  @include cConfig(34rem, 40rem)
 
 .c-5
-  @include cConfig()
-  top: 61%
-  left: 80%
+  @include cConfig(10rem,96rem)
 
 .c-6
-  @include cConfig()
-  top: 102%
-  left: 5%
+  @include cConfig(48rem, 8rem)
 
 .c-7
-  @include cConfig()
+  @include cConfig(70rem, 19rem)
 
 .c-8
-  @include cConfig()
+  @include cConfig(62rem, 68rem)
 
 .c-9
-  @include cConfig()
+  @include cConfig(90rem, 81rem)
 
 .c-10
-  @include cConfig()
+  @include cConfig(108rem, 2rem)
 
 .c-11
-  @include cConfig()
+  @include cConfig(130rem, 82rem)
 
 .c-12
-  @include cConfig()
+  @include cConfig(115rem, 99rem)
+
+.c-13
+  @include cConfig(118rem, 23rem)
+
+.c-14
+  @include cConfig(148rem, 23rem)
+
+.c-15
+  @include cConfig(188rem, 5rem)
+
+.c-16
+  @include cConfig(195rem, 85rem)
+
+.c-17
+  @include cConfig(158rem, 43rem)
+
+.c-18
+  @include cConfig(149rem, 59rem)
+
+.c-19
+  @include cConfig(205rem, 51rem)
+
+.c-20
+  @include cConfig(92rem, 43rem)
 
 
 .scroll-down-description
