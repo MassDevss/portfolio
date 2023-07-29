@@ -11,7 +11,7 @@ $withe: #fff
   transition-property: margin-top
   transition-duration: 1s
 
-  @media (max-width: 950px)
+  @media (max-width: 1400px)
     margin-top: 4rem
     flex-direction: column-reverse
 
@@ -27,7 +27,7 @@ $withe: #fff
     position: relative
     top: 2rem
 
-    @media (max-width: 950px)
+    @media (max-width: 1400px)
       width: 100%
       margin-top: 2rem
 
@@ -39,7 +39,7 @@ $withe: #fff
     display: flex
     justify-content: center
 
-    @media (max-width: 950px)
+    @media (max-width: 1400px)
       width: 100%
       bottom: 0rem
 
@@ -67,73 +67,89 @@ $withe: #fff
 
 @mixin cConfig($top, $left)
   position: absolute
+  transition-property: left
+  transition-duration: 0.2s
   top: $top
   left: $left
 
 
-// maximun values for circles
-// top: 84.5%
-// left: 92%
-
 .c-1
-  @include cConfig(34rem, 110rem)
+  @include cConfig(34rem, 90%)
+
+  @media (max-width: 1458px)
+    left: 82%
+
+  @media (max-width: 620px)
+    left: 72%
 
 .c-2
-  @include cConfig(9rem, 6rem)
+  @include cConfig(9rem, 7%)
 
 .c-3
-  @include cConfig(160rem, 102rem)
+  @include cConfig(160rem, 90%)
+
+  @media (max-width: 1458px)
+    left: 82%
+
+  @media (max-width: 620px)
+    left: 72%
 
 .c-4
-  @include cConfig(34rem, 40rem)
+  @include cConfig(31rem, 29%)
 
 .c-5
-  @include cConfig(10rem,96rem)
+  @include cConfig(10rem, 84%)
+
+  @media (max-width: 733px)
+    left: 72%
+
 
 .c-6
-  @include cConfig(48rem, 8rem)
+  @include cConfig(48rem, 8%)
 
 .c-7
-  @include cConfig(70rem, 19rem)
+  @include cConfig(70rem, 15%)
 
 .c-8
-  @include cConfig(62rem, 68rem)
+  @include cConfig(62rem, 78%)
 
 .c-9
-  @include cConfig(90rem, 81rem)
+  @include cConfig(90rem, 72%)
 
 .c-10
-  @include cConfig(108rem, 2rem)
+  @include cConfig(108rem, 2%)
 
 .c-11
-  @include cConfig(130rem, 82rem)
+  @include cConfig(130rem, 50%)
 
 .c-12
-  @include cConfig(115rem, 99rem)
+  @include cConfig(115rem, 87%)
+  @media (max-width: 932px)
+    left: 78%
 
 .c-13
-  @include cConfig(118rem, 23rem)
+  @include cConfig(118rem, 17%)
 
 .c-14
-  @include cConfig(148rem, 23rem)
+  @include cConfig(148rem, 19%)
 
 .c-15
-  @include cConfig(188rem, 5rem)
+  @include cConfig(188rem, 4%)
 
 .c-16
-  @include cConfig(195rem, 85rem)
+  @include cConfig(195rem, 72%)
 
 .c-17
-  @include cConfig(158rem, 43rem)
+  @include cConfig(158rem, 36%)
 
 .c-18
-  @include cConfig(149rem, 59rem)
+  @include cConfig(149rem, 48%)
 
 .c-19
-  @include cConfig(205rem, 51rem)
+  @include cConfig(200rem, 42%)
 
 .c-20
-  @include cConfig(92rem, 43rem)
+  @include cConfig(92rem, 30%)
 
 
 .scroll-down-description

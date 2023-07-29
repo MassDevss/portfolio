@@ -21,5 +21,13 @@ $withe: #fff
   padding: 2rem
   border-radius: 50%
   background-color: $purple
-  transition-property: top, bottom, left, right
+  transition-property: height, width
   transition-duration: 1s
+
+  @media (max-width: 1200px)
+    width: 3.5rem
+    height: 3.5rem
+
+  @media (max-width: 780px)
+    width: 3rem
+    height: 3rem
