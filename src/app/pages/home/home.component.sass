@@ -15,6 +15,9 @@ $withe: #fff
     margin-top: 4rem
     flex-direction: column-reverse
 
+  @media (max-width: 426px)
+    margin-top: 2rem
+
   .left-intro
     font-family: 'Inconsolata', monospace
     font-weight: 400
@@ -59,9 +62,6 @@ $withe: #fff
       @media (max-width: 1400px)
         width: 88%
 
-      @media (max-width: 1200px)
-        width: 68%
-
       @media (max-width: 950px)
         width: 76%
 
@@ -79,7 +79,7 @@ $withe: #fff
   @media (max-width: 1458px)
     left: 82%
 
-  @media (max-width: 620px)
+  @media (max-width: 630px)
     left: 72%
 
 .c-2
@@ -91,8 +91,11 @@ $withe: #fff
   @media (max-width: 1458px)
     left: 82%
 
-  @media (max-width: 620px)
+  @media (max-width: 630px)
     left: 72%
+
+  @media (max-width: 522px)
+    left: 65%
 
 .c-4
   @include cConfig(31rem, 29%)
@@ -103,6 +106,8 @@ $withe: #fff
   @media (max-width: 733px)
     left: 72%
 
+  @media (max-width: 522px)
+    left: 65%
 
 .c-6
   @include cConfig(48rem, 8%)
@@ -124,8 +129,12 @@ $withe: #fff
 
 .c-12
   @include cConfig(115rem, 87%)
+
   @media (max-width: 932px)
     left: 78%
+
+  @media (max-width: 522px)
+    left: 65%
 
 .c-13
   @include cConfig(118rem, 17%)

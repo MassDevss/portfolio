@@ -8,10 +8,6 @@
   transition-property: font-size
   transition-duration: 1s
 
-  animation-name: zoomInOut
-  animation-delay: 3.5s
-  animation-duration: 1s
-
   @media (max-width: 1400px)
     font-size: 70px
 
@@ -19,7 +15,13 @@
     font-size: 60px
 
   @media (max-width: 1090px)
-    font-size: 50px
+    font-size: 3rem
+
+  @media (max-width: 420px)
+    font-size: 2.7rem
+
+  @media (max-width: 368px)
+    font-size: 2.4rem
 
 @mixin transition-property($property...)
     -moz-transition-property:    $property
@@ -64,6 +66,9 @@
 
   @media (max-width: 1090px)
     font-size: 24px
+
+  @media (max-width: 420px)
+    font-size: 1.3rem
 
 
 @keyframes flicker
@@ -119,12 +124,3 @@
 .t-15
   @include jumpAnimation(3.3s)
 
-@keyframes zoomInOut
-  0%
-    font-size: 80px
-  50%
-    font-size: 70px
-  80%
-    font-size: 90px
-  100%
-    font-size: 80px

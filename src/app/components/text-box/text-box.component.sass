@@ -14,7 +14,6 @@
 
 
 .text-box-wrap
-
   background-color: #1f1f1f
   margin-top: 20px
   margin-bottom: 40px
@@ -30,11 +29,21 @@
     font-family: 'M PLUS Rounded 1c', sans-serif
     font-weight: 600
 
+    @media (max-width: 868px)
+      font-size: 2rem
+
+    @media (max-width: 868px)
+      font-size: 1.5rem
+
 .text-box-content
   margin-top: 0.4rem
 
   p
+    text-align: justify
     color: #fff
     font-family: 'Rubik', sans-serif
     font-weight: 400
     font-size: 1.1rem
+
+    @media (max-width: 404px)
+      font-size: 1rem

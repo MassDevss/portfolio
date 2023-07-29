@@ -11,6 +11,12 @@
   display: flex
   justify-content: space-evenly
 
+  @media (max-width: 625px)
+    top: -1.8rem
+
+  @media (max-width: 542px)
+    top: -1.5rem
+
 .intern-link
   font-size: 30px
   font-family: 'Roboto', sans-serif
@@ -21,6 +27,14 @@
   border: solid 2px
   border-image: linear-gradient(#7842c8, #3b2173) 3
   overflow: hidden
+
+  @media (max-width: 625px)
+    font-size: 25px
+    width: 150px
+
+  @media (max-width: 542px)
+    font-size: 18px
+    width: 100px
 
   p
     transition-property: letter-spacing, color

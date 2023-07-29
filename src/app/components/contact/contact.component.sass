@@ -34,13 +34,18 @@
       position: relative
       bottom: 2.6rem
 
+
       h2
         color: #fff
-        font-size: 3rem
+        font-size: 2.5rem
         font-family: "M PLUS Rounded 1c", sans-serif
         font-weight: 600
 
+        @media (max-width: 868px)
+          font-size: 2rem
+
       p
+        margin-top: 0.5rem
         color: #fff
         font-family: "Rubik", sans-serif
         font-weight: 400
@@ -50,8 +55,11 @@
         @media (max-width: 900px)
           width: 600px
 
-        @media (max-width: 602px)
-          width: 300px
+        @media (max-width: 734px)
+          width: 100%
+
+      @media (max-width: 734px)
+        width: 80%
 
     .icons-contact
       display: flex
@@ -64,3 +72,9 @@
 
       @media (max-width: 1622px)
         width: 100%
+
+      @media (max-width: 734px)
+        gap: 2rem
+
+      @media (max-width: 604px)
+        margin-top: 1.8rem
