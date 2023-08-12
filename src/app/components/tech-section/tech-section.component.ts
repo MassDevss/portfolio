@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { technologies } from 'src/app/technologies/technologies';
 
 @Component({
   selector: 'app-tech-section',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./tech-section.component.sass']
 })
 export class TechSectionComponent {
+
+  myTechs: any[] = technologies
 
 }
