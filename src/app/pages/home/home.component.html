@@ -28,19 +28,23 @@
         <div class="sub-title animate__animated animate__fadeInLeft animate__delay-1s">
           <h3><span class="developer-span">Desarrollador</span> Full<span class="middle-dash">-</span>Stack</h3>
         </div>
-      </div>
-      <div class="image-intro">
-        <div class="image-wrap animate__animated animate__zoomIn">
-          <!-- <img ngSrc="../../../assets/images/me.jpeg" alt="Imagen de mi cara" width="612" height="612"> -->
+        <div class="techs-flex">
+          <app-tech-card *ngFor="let tech of myTechs"
+            [techName]="tech.name"
+            [techColor]="tech.color"
+          >
+          </app-tech-card>
         </div>
       </div>
+      <!-- <div class="image-intro">
+        <div class="image-wrap animate__animated animate__zoomIn">
+          <img ngSrc="../../../assets/images/me.jpeg" alt="Imagen de mi cara" width="612" height="612">
+        </div>
+      </div> -->
       </section>
   </div>
 
-
   <app-about-me></app-about-me>
-
-  <app-tech-section></app-tech-section>
 
   <app-proyects></app-proyects>
 
