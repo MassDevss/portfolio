@@ -6,8 +6,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import {NgOptimizedImage} from "@angular/common";
-import { TitleComponent } from './components/title/title.component';
-import { CircleComponent } from './components/circle/circle.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { TextBoxComponent } from './components/text-box/text-box.component';
 import { SwithLanguageComponent } from './components/swith-language/swith-language.component';
@@ -24,8 +22,6 @@ import { ContactCardComponent } from './components/contact-card/contact-card.com
     AppComponent,
     HomeComponent,
     NavComponent,
-    TitleComponent,
-    CircleComponent,
     AboutMeComponent,
     TextBoxComponent,
     SwithLanguageComponent,
