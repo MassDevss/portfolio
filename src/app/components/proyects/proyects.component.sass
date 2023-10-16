@@ -4,20 +4,19 @@
   display: flex
   justify-content: center
   align-items: center
+  width: 100%
 
   .proyects-wrap
-    width: 72%
+    max-width: 1920px
+    width: 100%
     display: flex
     justify-content: flex-start
     flex-direction: column
 
-    @media (max-width: 1388px)
-      width: 92%
-
   .proyects-title
+    width: 100%
     margin-top: 20px
     margin-bottom: 40px
-    padding: 20px
     display: flex
     justify-content: center
     align-items: center
@@ -31,12 +30,74 @@
       @media (max-width: 868px)
         font-size: 2rem
 
-      // @media (max-width: 520px)
-      //   font-size: 1.5rem
-
-
   .proyect-cards-wrap
     display: flex
-    justify-content: center
+    justify-content: flex-start
     flex-wrap: wrap
-    gap: 6rem
+    width: 100%
+
+
+.proyect-card-main
+  position: relative
+  bottom: 0
+  background-color: #222222e5
+  border-radius: 1rem
+  width: 33.33%
+
+  @media (max-width: 1565px)
+    width: 50%
+
+  &:hover
+
+  .proyect-card-wrap
+    width: 100%
+    position: relative
+
+    .proyect-img
+      width: 100%
+      overflow: hidden
+
+      &:hover
+        img
+          filter: grayscale(0)
+          transform: scale(1.2)
+
+        .proyect-text
+          opacity: 1
+
+      img
+        width: 100%
+        filter: grayscale(1)
+        transition-property: filter, transform
+        transition-duration: 0.6s
+        transform: scale(1)
+      //
+      //img:hover
+      //  filter: grayscale(0)
+      //  transform: scale(1.2)
+
+
+    .proyect-text
+      background-color: rgba(0, 0, 0, 0.45)
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      opacity: 0
+      transition-property: opacity, background-color
+      transition-duration: 0.4s
+      width: 100%
+      color: #fff
+      font-family: sans-serif
+
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+
+      .proyect-title
+        padding: 0.4rem
+
+      .proyect-resume
+        padding: 0.4rem

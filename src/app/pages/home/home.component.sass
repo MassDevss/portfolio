@@ -6,7 +6,11 @@ $withe: #fff
   min-height: 100vh
 
 .intro-wrap
-  margin-top: 12rem
+  min-height: calc(100vh - 4.2rem)
+  width: 100%
+  display: flex
+  justify-content: center
+  align-items: center
 
 .intro
   display: flex
@@ -17,17 +21,20 @@ $withe: #fff
   transition-duration: 1s
   flex-direction: column
 
+  position: relative
+  top: -6rem
+
   @media (max-width: 1400px)
     margin-top: 4rem
 
   @media (max-width: 426px)
     margin-top: 2rem
 
-  .left-intro
+  .main-intro
     font-family: 'Inconsolata', monospace
     font-weight: 400
     text-align: center
-    width: 50%
+    width: 100%
 
     transition-property: margin-top
     transition-duration: 1s
@@ -38,37 +45,6 @@ $withe: #fff
     @media (max-width: 1400px)
       width: 100%
       margin-top: 2rem
-
-  .image-intro
-    position: relative
-    z-index: 10
-    bottom: 8rem
-    width: 50%
-    display: flex
-    justify-content: center
-
-    @media (max-width: 1400px)
-      width: 100%
-      bottom: 0rem
-
-  .image-wrap
-    display: flex
-    justify-content: center
-
-    img
-      // box-shadow: #653793 0rem 0rem 4rem
-      border-radius: 50%
-      width: 100%
-      height: auto
-
-      transition-property: width
-      transition-duration: 1s
-
-      @media (max-width: 1400px)
-        width: 88%
-
-      @media (max-width: 950px)
-        width: 76%
 
 .scroll-down-description
   cursor: pointer
@@ -199,5 +175,4 @@ $withe: #fff
   display: flex
   justify-content: center
   align-items: center
-  gap: 1rem
   flex-wrap: wrap

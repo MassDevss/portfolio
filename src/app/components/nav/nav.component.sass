@@ -6,7 +6,7 @@
   align-items: center
   justify-content: flex-start
   gap: 10px
-  background-color: #0e0e0e
+  background-color: #312066
 
   box-shadow: 2px -70px 167px 0px rgba(101, 55, 147, 0.75)
   -webkit-box-shadow: 2px -70px 167px 0px rgba(101, 55, 147, 0.75)
@@ -41,13 +41,16 @@
     width: 100px
 
   a
-    transition-property: letter-spacing, color
+    transition-property: letter-spacing, color, text-decoration-line, text-decoration-thickness
     transition-duration: 0.4s
-    text-decoration: none
+    text-decoration-line: underline
+    text-decoration-thickness: 0.1rem
     color: #cbcbcb
     cursor: pointer
 
     &:hover
       letter-spacing: 1px
-      color: #ae62ff
+      color: #ffffff
+      text-decoration: underline
+      text-decoration-thickness: 0.2rem
 

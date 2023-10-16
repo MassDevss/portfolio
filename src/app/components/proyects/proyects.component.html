@@ -9,22 +9,25 @@
 
     <div class="proyect-cards-wrap">
 
-      <app-proyect-card
-        proyectUrl="https://eltiburonburger.vercel.app/home"
-        proyectImageName="tibuProyect.png"
-        proyectName="El Tiburon pagina web"
-        proyectResume="El Tiburon Burger es un restaurant de hamburguesas gurmet quien buscaba una pagina para mostrarse al mundo y dar un vistazo de los productos que crean"
-      ></app-proyect-card>
+      <div *ngFor="let proyect of proyects" class="proyect-card-main">
+        <div class="proyect-card-wrap">
+          <div class="proyect-img">
+            <img src="./assets/images/proyects/{{ proyect.proyectImageName }}" alt="">
+            <img src="./assets/images/proyects/{{ proyect.proyectImageName }}" alt="" *ngIf="proyect.proyectUrl === ''">
+            <div class="proyect-text">
+              <div class="proyect-title">
+                <h4>{{ proyect.proyectName }}</h4>
+              </div>
 
-      <app-proyect-card
-        proyectUrl="https://github.com/ManuelsSaNt/TiburonPVETs"
-        proyectImageName="tiburon_sp.png"
-        proyectName="El Tiburon punto de venta"
-        proyectResume="Con la necesidad de agilizar el proceso de tomar un pedido, procesarlo y entregarlo satisfactoriamente a los clientes se decidió crear este software, utilizado para cobrar y registrar los pedidos que tenga el negocio."
-      ></app-proyect-card>
+              <div class="proyect-resume">
+                <p>{{ proyect.proyectResume }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
-
   </div>
 </section>
 
