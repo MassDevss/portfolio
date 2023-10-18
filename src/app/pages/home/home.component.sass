@@ -27,8 +27,8 @@ $withe: #fff
   @media (max-width: 1400px)
     margin-top: 4rem
 
-  @media (max-width: 426px)
-    margin-top: 2rem
+  @media (max-width: 576px)
+    margin-top: 0rem
 
   .main-intro
     font-family: 'Inconsolata', monospace
@@ -67,14 +67,11 @@ $withe: #fff
   @media (max-width: 1400px)
     font-size: 70px
 
-  @media (max-width: 1200px)
-    font-size: 60px
+  @media (max-width: 656px)
+    font-size: 65px
 
-  @media (max-width: 1090px)
-    font-size: 3rem
-
-  @media (max-width: 420px)
-    font-size: 2.7rem
+  @media (max-width: 576px)
+    font-size: 55px
 
   @media (max-width: 368px)
     font-size: 2.4rem
@@ -107,11 +104,8 @@ $withe: #fff
   transition: font-size
   transition-duration: 1s
 
-  @media (max-width: 1200px)
-    font-size: 26px
-
-  @media (max-width: 1090px)
-    font-size: 24px
+  @media (max-width: 576px)
+    font-size: 28px
 
   @media (max-width: 420px)
     font-size: 1.3rem
@@ -170,9 +164,35 @@ $withe: #fff
 .t-15
   @include jumpAnimation(3.3s)
 
+
+.extern-links-wrap
+  margin-top: 1rem
+  display: flex
+  justify-content: center
+  align-items: center
+
+  .extern-links
+    display: flex
+    gap: 1rem
+    background-color: #1f1f1f
+    box-shadow: #550599 0.4rem 0.4rem 0rem
+    border-radius: 1rem
+    padding: 0.5rem
+    transition-property: box-shadow, transform
+    transition-duration: 0.8s
+    transform: skew(0deg, 0deg) scale(1)
+
+    svg
+      transition-property: fill
+      transition-duration: 200ms
+
+      &:hover
+        fill: #d6a8ff
+
 .techs-flex
   margin-top: 1rem
   display: flex
   justify-content: center
   align-items: center
   flex-wrap: wrap
+
