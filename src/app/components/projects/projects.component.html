@@ -1,0 +1,32 @@
+
+
+<section class="projects-wrapper">
+  <div class="projects-wrap">
+
+    <div class="projects-title">
+      <h3>Mis Proyectos</h3>
+    </div>
+
+    <div class="project-cards-wrap">
+
+      <a [href]="project.url" target="_blank" *ngFor="let project of projects" class="project-card-main">
+        <div class="project-card-wrap">
+          <div class="project-img">
+            <img src="./assets/images/projects/{{ project.image }}" alt="">
+            <div class="project-text">
+              <div class="project-title">
+                <h4>{{ project.name }}</h4>
+              </div>
+
+              <div class="project-resume">
+                <p>{{ project.resume }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+

@@ -11,7 +11,7 @@ import { TextBoxComponent } from './components/text-box/text-box.component';
 import { SwithLanguageComponent } from './components/swith-language/swith-language.component';
 import { ClearExtensionPipe } from './pipes/clear-extension.pipe';
 import { TechCardComponent } from './components/tech-card/tech-card.component';
-import { ProyectsComponent } from './components/proyects/proyects.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContactCardComponent } from './components/contact-card/contact-card.component';
 import { RouterModule } from '@angular/router';
@@ -26,7 +26,7 @@ import { RouterModule } from '@angular/router';
     SwithLanguageComponent,
     ClearExtensionPipe,
     TechCardComponent,
-    ProyectsComponent,
+    ProjectsComponent,
     ContactComponent,
     ContactCardComponent,
   ],
