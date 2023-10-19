@@ -5,8 +5,7 @@
   display: flex
   align-items: center
   justify-content: flex-start
-  gap: 10px
-
+  gap: 2rem
   background: rgb(16,0,57)
   background: linear-gradient(90deg, rgba(16,0,57,1) 0%, rgba(72,9,121,1) 39%, rgba(102,0,194,1) 100%)
 
@@ -25,18 +24,21 @@
 
 
 
+.intern-link:first-child
+  margin-left: 2rem
+
+  @media (max-width: 370px)
+    margin-left: 1rem
+
 .intern-link
   font-size: 26px
   font-family: 'Roboto', sans-serif
   text-align: center
-  // background-color: #131313
   padding: 0.3rem 0rem
-  width: 180px
   border-radius: 10px
 
   @media (max-width: 625px)
     font-size: 25px
-    width: 150px
 
   @media (max-width: 542px)
     font-size: 22px
