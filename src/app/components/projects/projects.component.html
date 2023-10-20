@@ -17,11 +17,13 @@
               <div class="project-title">
                 <h4>{{ project.name }}</h4>
               </div>
-
-              <div class="project-resume">
-                <p>{{ project.resume }}</p>
+              <div class="build-technologies">
+                <div class="tech-in-project" *ngFor="let tech of project.technologies">
+                  <img [ngSrc]="'../../../assets/images/tech-icons/' + tech.toLowerCase() + '.png'" [alt]="'Logo de ' + tech" width="30" height="30">
+                </div>
               </div>
             </div>
+
           </div>
         </div>
       </a>
