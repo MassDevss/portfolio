@@ -22,8 +22,6 @@ export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
 
   toBodyColor: string = '#131313';
 
-  isFistView: boolean = true;
-
   interval: any = null;
 
   constructor(private renderer: Renderer2, private elementRef: ElementRef) { }
@@ -41,37 +39,38 @@ export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
   callback = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-          if (this.isFistView){
-            this.isFistView = false;
 
-            setTimeout(() => {
-              this.swapColors()
-            }, 500)
+        // lo que quiers ejecutar
 
-            setTimeout(() => {
-              this.outColors()
-            },1500)
-          }
         }
       });
     };
 
   ngOnInit() {
-    const options = {
-      root: null, // El viewport
-      rootMargin: '0px', // Margen alrededor del viewport
-      threshold: 0.5 // Umbral de visibilidad
-    };
 
-    const observer = new IntersectionObserver(this.callback, options);
-    observer.observe(this.elementRef.nativeElement);
+    setTimeout(() => {
+      this.swapColors()
+    }, 500)
+
+    setTimeout(() => {
+      this.outColors()
+    },1500)
+
+    // const options = {
+    //   root: null, // El viewport
+    //   rootMargin: '0px', // Margen alrededor del viewport
+    //   threshold: 0.5 // Umbral de visibilidad
+    // };
+
+    // const observer = new IntersectionObserver(this.callback, options);
+    // observer.observe(this.elementRef.nativeElement);
   }
 
   ngAfterViewInit(): void {
     this.interval = setInterval(() => {
 
-      const random = Math.floor(Math.random() * 12);
-      const card = this.cardElem?.nativeElement;
+      const random: number = Math.floor(Math.random() * 13);
+      const card: HTMLDivElement | undefined = this.cardElem?.nativeElement;
 
       if (card && random === 11){
         setTimeout(() => {

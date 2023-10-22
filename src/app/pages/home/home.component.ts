@@ -1,14 +1,22 @@
-import { AfterViewInit, Component, Directive, ElementRef, ViewChild } from '@angular/core';
-import { NavComponent } from 'src/app/components/nav/nav.component';
+import { Component } from '@angular/core';
 
-@Directive({selector: 'app-about-me'})
-  class aboutMe {}
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.sass']
 })
 export class HomeComponent {
+
+  hideSpace: boolean = false;
+
+  ngOnInit() {
+
+    this.hideSpace = window.innerWidth <= 772;
+
+    window.addEventListener('resize', () => {
+      this.hideSpace = window.innerWidth <= 772;
+    })
+  }
 
   myTechs: any[] = [
     {

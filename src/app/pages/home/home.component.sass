@@ -24,9 +24,6 @@ $withe: #fff
   position: relative
   top: -6rem
 
-  @media (max-width: 1400px)
-    margin-top: 4rem
-
   @media (max-width: 576px)
     margin-top: 0rem
 
@@ -61,26 +58,21 @@ $withe: #fff
   font-family: 'Inconsolata', monospace
   font-weight: 400
   text-decoration: underline
-  transition-property: font-size
-  transition-duration: 1s
+  display: flex
+  justify-content: center
+  flex-wrap: wrap
 
-  @media (max-width: 1400px)
+  .jump-control
+    @media (max-width: 772px)
+      width: 100%
+
+
+  @media (max-width: 772px)
     font-size: 70px
+    margin-bottom: 1rem
 
-  @media (max-width: 656px)
-    font-size: 65px
-
-  @media (max-width: 576px)
-    font-size: 55px
-
-  @media (max-width: 463px)
-    font-size: 48px
-
-  @media (max-width: 418px)
-    font-size: 42px
-
-  @media (max-width: 370px)
-    font-size: 37px
+  @media (max-width: 376px)
+    font-size: 60px
 
 .title-h-wrap span
   position: relative
@@ -106,14 +98,15 @@ $withe: #fff
 
 .sub-title h3
   font-weight: 600
-  transition: font-size
-  transition-duration: 1s
 
   @media (max-width: 576px)
     font-size: 28px
 
   @media (max-width: 420px)
-    font-size: 1.3rem
+    font-size: 26px
+
+  @media (max-width: 376px)
+    font-size: 22px
 
 
 @keyframes flicker

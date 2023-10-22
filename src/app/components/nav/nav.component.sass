@@ -1,6 +1,7 @@
 
 .portfolio-navbar
   width: 100%
+  padding: 0.1rem 0
   height: 4.2rem
   display: flex
   align-items: center
@@ -9,51 +10,43 @@
   background: rgb(16,0,57)
   background: linear-gradient(90deg, rgba(16,0,57,1) 0%, rgba(72,9,121,1) 39%, rgba(102,0,194,1) 100%)
 
-  box-shadow: 2px -70px 167px 0px rgba(101, 55, 147, 0.75)
-  -webkit-box-shadow: 2px -70px 167px 0px rgba(101, 55, 147, 0.75)
-  -moz-box-shadow: 2px -70px 167px 0px rgba(101, 55, 147, 0.75)
+  box-shadow: 2px -30px 167px 0px rgba(101, 55, 147, 0.75)
+  -webkit-box-shadow: 2px -30px 167px 0px rgba(101, 55, 147, 0.75)
+  -moz-box-shadow: 2px -30px 167px 0px rgba(101, 55, 147, 0.75)
 
-  animation-name: buildShadow
-  animation-duration: 1s
+  @media (max-width: 420px)
+    justify-content: space-evenly
+    gap: 0
 
-@keyframes buildShadow
-  0%
-    box-shadow: 2px -70px 167px 0px rgba(101, 55, 147, 0)
-  100%
-    box-shadow: 2px -70px 167px 0px rgba(101, 55, 147, 0.75)
+//@keyframes buildShadow
+//  0%
+//    box-shadow: 2px -70px 167px 0px rgba(101, 55, 147, 0)
+//  100%
+//    box-shadow: 2px -70px 167px 0px rgba(101, 55, 147, 0.75)
 
 
 
 .intern-link:first-child
   margin-left: 2rem
 
-  @media (max-width: 370px)
-    margin-left: 1rem
+  @media (max-width: 420px)
+    margin-left: 0
 
 .intern-link
-  font-size: 26px
-  font-family: 'Roboto', sans-serif
-  text-align: center
-  padding: 0.3rem 0rem
-  border-radius: 10px
-
-  @media (max-width: 625px)
-    font-size: 25px
-
-  @media (max-width: 542px)
-    font-size: 22px
 
   a
-    transition-property: letter-spacing, color, text-decoration-line, text-decoration-thickness
-    transition-duration: 0.4s
-    text-decoration-line: underline
-    text-decoration-thickness: 0.1rem
-    color: #cbcbcb
+    transition-property: letter-spacing, color, border
+    transition-duration: 0.2s
+    color: #dcdcdc
     cursor: pointer
+    font-size: 20px
+    font-family: 'Roboto', sans-serif
+    text-align: center
+    padding: 0.6rem 1rem
+    border-radius: 300px
+    border: 2px solid rgb(192, 176, 255)
 
     &:hover
-      letter-spacing: 1px
       color: #ffffff
-      text-decoration: underline
-      text-decoration-thickness: 0.2rem
-
+      border: 2px solid #714bff
+      background-color: rgba(0, 0, 0, 0.04)
