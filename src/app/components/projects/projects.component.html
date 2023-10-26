@@ -9,7 +9,7 @@
 
     <div class="project-cards-wrap">
 
-      <a [href]="project.url" target="_blank" *ngFor="let project of projects" class="project-card-main">
+      <a [href]="project.url" target="_blank" *ngFor="let project of projects, index as i" [class]=" 'project-card-main ' + (i % 2 == 0 ? 'p-left' : 'p-right') ">
         <div class="project-card-wrap">
           <div class="project-img">
             <img src="./assets/images/projects/{{ project.image }}" alt="">
