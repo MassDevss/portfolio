@@ -6,5 +6,6 @@ export type Project = {
   name: string;
   description: string;
   technologies: string[];
+  github?: string;
 }
 
