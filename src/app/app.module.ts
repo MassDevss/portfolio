@@ -8,7 +8,6 @@ import { NavComponent } from './components/nav/nav.component';
 import {NgOptimizedImage} from "@angular/common";
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { TextBoxComponent } from './components/text-box/text-box.component';
-import { ClearExtensionPipe } from './pipes/clear-extension.pipe';
 import { TechCardComponent } from './components/tech-card/tech-card.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
@@ -22,7 +21,6 @@ import { RouterModule } from '@angular/router';
     NavComponent,
     AboutMeComponent,
     TextBoxComponent,
-    ClearExtensionPipe,
     TechCardComponent,
     ProjectsComponent,
     ContactComponent,
