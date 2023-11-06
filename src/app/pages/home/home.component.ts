@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Tech } from 'src/app/types/Tech.type';
 
 @Component({
   selector: 'app-home',
@@ -9,16 +11,9 @@ export class HomeComponent {
 
   hideSpace: boolean = false;
 
-  ngOnInit() {
+  constructor(private viewportScroller: ViewportScroller) { }
 
-    this.hideSpace = window.innerWidth <= 772;
-
-    window.addEventListener('resize', () => {
-      this.hideSpace = window.innerWidth <= 772;
-    })
-  }
-
-  myTechs: any[] = [
+  myTechs: Tech[] = [
     {
       name: "HTML",
       color: "#e44f26",
@@ -74,7 +69,18 @@ export class HomeComponent {
       color: "#2f3a3e",
       type: "other"
     },
-  ]
+  ];
 
+  ngOnInit() {
+    this.hideSpace = window.innerWidth <= 772;
+
+    window.addEventListener('resize', () => {
+      this.hideSpace = window.innerWidth <= 772;
+    })
+  }
+
+  scrollTo(id: string){
+    this.viewportScroller.scrollToAnchor(id);
+  }
 
 }

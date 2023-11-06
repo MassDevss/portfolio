@@ -9,8 +9,24 @@ $withe: #fff
   min-height: calc(100vh - 4.2rem)
   width: 100%
   display: flex
+  flex-direction: column
   justify-content: center
   align-items: center
+
+  .arrow-down
+    position: absolute
+    bottom: 8rem
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+
+    svg
+      // fill: #7644ff
+      fill: #fff
+      background-color: #1f1f1f
+      border-radius: 10px
+      box-shadow: #131313 0.2rem 0.2rem 0rem
 
 .intro
   display: flex
@@ -36,12 +52,8 @@ $withe: #fff
     transition-property: margin-top
     transition-duration: 1s
 
-    position: relative
-    top: 2rem
-
     @media (max-width: 1400px)
       width: 100%
-      margin-top: 2rem
 
 .scroll-down-description
   cursor: pointer
