@@ -68,13 +68,16 @@
 .project-card-main-new
   @include blackGlass()
   position: relative
-  width: 900px
-  padding: 2rem
   text-decoration: none
 
   .project-card-wrap
     width: 100%
     display: flex
+
+    @media (max-width: 912px)
+      flex-direction: column
+      align-items: center
+      justify-content: center
 
     .project-img
       width: 384px
@@ -82,6 +85,10 @@
       border-radius: 0.5rem
       overflow: hidden
       border-radius: 0.4rem
+
+      @media (max-width: 912px)
+        width: 100%
+        height: auto
 
       img
         width: 100%
@@ -109,6 +116,15 @@
         padding: 1rem 0
         font-size: 1rem
 
+      @media (max-width: 912px)
+        padding-top: 1rem
+        width: 100%
+        padding-left: 0
+
+      @media (max-width: 508px)
+        .project-title
+          font-size: 1.3rem
+
 
 .build-technologies
   display: flex
@@ -117,7 +133,10 @@
   gap: 12px
 
   .tech-in-project
-
     color: #fff
     padding: 0.8rem
     @include purpleGlass()
+
+    @media (max-width: 508px)
+      padding: 0.6rem
+      font-size: 0.9rem
