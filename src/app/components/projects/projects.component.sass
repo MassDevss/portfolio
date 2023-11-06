@@ -1,11 +1,19 @@
 
-@mixin glass()
+@mixin purpleGlass()
   background: rgba(83, 22, 159, 0.13)
   border-radius: 16px
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
   backdrop-filter: blur(7.7px)
   -webkit-backdrop-filter: blur(7.7px)
   border: 1px solid rgba(83, 22, 159, 0.5)
+
+@mixin blackGlass()
+  background: rgba(38, 38, 38, 0.13)
+  border-radius: 16px
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+  backdrop-filter: blur(7.7px)
+  -webkit-backdrop-filter: blur(7.7px)
+  border: 1px solid rgba(77, 77, 77, 0.5)
 
 .projects-wrapper
   display: flex
@@ -58,7 +66,7 @@
 
 
 .project-card-main-new
-  @include glass()
+  @include blackGlass()
   position: relative
   width: 900px
   padding: 2rem
@@ -110,4 +118,4 @@
 
     color: #fff
     padding: 0.8rem
-    @include glass()
+    @include purpleGlass()
