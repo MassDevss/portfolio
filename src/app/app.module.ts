@@ -6,41 +6,31 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavComponent } from './components/nav/nav.component';
 import {NgOptimizedImage} from "@angular/common";
-import { TitleComponent } from './components/title/title.component';
-import { CircleComponent } from './components/circle/circle.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { TextBoxComponent } from './components/text-box/text-box.component';
-import { SwithLanguageComponent } from './components/swith-language/swith-language.component';
-import { ClearExtensionPipe } from './pipes/clear-extension.pipe';
-import { TechSectionComponent } from './components/tech-section/tech-section.component';
 import { TechCardComponent } from './components/tech-card/tech-card.component';
-import { ProyectCardComponent } from './components/proyect-card/proyect-card.component';
-import { ProyectsComponent } from './components/proyects/proyects.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ContactCardComponent } from './components/contact-card/contact-card.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     NavComponent,
-    TitleComponent,
-    CircleComponent,
     AboutMeComponent,
     TextBoxComponent,
-    SwithLanguageComponent,
-    ClearExtensionPipe,
-    TechSectionComponent,
     TechCardComponent,
-    ProyectCardComponent,
-    ProyectsComponent,
+    ProjectsComponent,
     ContactComponent,
     ContactCardComponent,
   ],
     imports: [
         BrowserModule,
         AppRoutingModule,
-        NgOptimizedImage
+        NgOptimizedImage,
+        RouterModule
     ],
   providers: [],
   bootstrap: [AppComponent]

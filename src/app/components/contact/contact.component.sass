@@ -1,28 +1,15 @@
 
-
 .contact-body
-  background-color: #141414
+  background: rgba(38, 38, 38, 0.13)
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+  backdrop-filter: blur(7.7px)
+  -webkit-backdrop-filter: blur(7.7px)
+  border-top: 1px solid rgba(77, 77, 77, 0.5)
+
   width: 100%
-  margin-top: 18rem
-  padding-bottom: 10rem
-
-  .custom-shape-divider-bottom-1689915145
-    position: relative
-    bottom: 125px
-    width: 100%
-    overflow: hidden
-    line-height: 0
-    transform: rotate(180deg)
-
-    svg
-      position: relative
-      display: block
-      width: calc(100% + 1.3px)
-      height: 125px
-
-    .shape-fill
-      fill: #141414
-
+  padding-top: 4rem
+  padding-bottom: 4rem
+  margin-top: 6rem
 
   .contact-content
     display: flex
@@ -31,19 +18,14 @@
     align-items: center
 
     .text-contact
-      position: relative
-      bottom: 2.6rem
-
-
       h2
         color: #fff
         font-size: 2.5rem
-        font-family: "M PLUS Rounded 1c", sans-serif
+        font-family: "Sometype Mono", monospace
         font-weight: 600
 
         @media (max-width: 868px)
           font-size: 2rem
-
       p
         margin-top: 0.5rem
         color: #fff
@@ -67,14 +49,10 @@
       gap: 6rem
       flex-wrap: wrap
       justify-content: center
-      margin-top: 4.8rem
-
+      margin-top: 5.2rem
 
       @media (max-width: 1622px)
         width: 100%
 
       @media (max-width: 734px)
         gap: 2rem
-
-      @media (max-width: 604px)
-        margin-top: 1.8rem

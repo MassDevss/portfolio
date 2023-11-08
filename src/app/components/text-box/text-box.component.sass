@@ -8,42 +8,38 @@
   transition-property: box-shadow, bottom
   transition-duration: 0.5s
 
-.text-box-container:hover
-  bottom: 0.3rem
-  box-shadow: #653793 0.3rem 0.2rem 2rem
-
+  background: rgba(38, 38, 38, 0.13)
+  border-radius: 16px
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+  backdrop-filter: blur(7.7px)
+  -webkit-backdrop-filter: blur(7.7px)
+  border: 1px solid rgba(77, 77, 77, 0.5)
 
 .text-box-wrap
-  background-color: #1f1f1f
-  margin-top: 20px
-  margin-bottom: 40px
-  padding: 20px
-  border-radius: 12px
-  box-shadow: #131313 10px 10px 0
+  margin-top: 10px
+  margin-bottom: 10px
 
 .text-box-title
+  padding-bottom: 0.5rem
 
   h3
     color: #fff
-    font-size: 2.5rem
-    font-family: 'M PLUS Rounded 1c', sans-serif
+    font-size: 2.2rem
+    font-family: "Sometype Mono", monospace
     font-weight: 600
 
     @media (max-width: 868px)
-      font-size: 2rem
+      font-size: 1.8rem
 
-    @media (max-width: 868px)
-      font-size: 1.5rem
 
 .text-box-content
   margin-top: 0.4rem
 
   p
-    text-align: justify
     color: #fff
     font-family: 'Rubik', sans-serif
     font-weight: 400
-    font-size: 1.1rem
+    font-size: 1.2rem
 
     @media (max-width: 404px)
       font-size: 1rem
