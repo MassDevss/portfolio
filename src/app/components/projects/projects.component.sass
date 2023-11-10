@@ -118,3 +118,41 @@
     @media (max-width: 508px)
       padding: 0.6rem
       font-size: 0.9rem
+
+.deploy-links
+  display: flex
+  justify-content: flex-end
+  gap: 1rem
+  margin-top: 1rem
+
+  a
+    border-radius: 0.3rem
+    text-decoration: none
+    width: 2.2rem
+    height: 2.2rem
+    font-weight: bold
+    transition-property: background-color
+    transition-duration: 0.2s
+    display: flex
+    justify-content: center
+    align-items: center
+    padding: 0.3rem
+
+    &:hover
+      background-color: #29004f
+      svg
+        fill: #ffffff
+
+  svg
+    fill: #d3d3d3
+
+  .production-link
+    background-color: #240046FF
+    border: solid 1px rgba(86, 35, 187, 0.45)
+
+  .github-link
+    border: solid 1px rgba(100, 100, 100, 0.55)
+    background-color: #111111
+
+    &:hover
+      background-color: #1c1c1c
