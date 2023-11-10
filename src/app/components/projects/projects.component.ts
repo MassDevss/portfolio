@@ -40,6 +40,14 @@ export class ProjectsComponent {
       name: "CyberCafe10M.com",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
       description: 'Sitio web para CyberCafe10m, un cybercafe que se hace notar por su atención al cliente y calidad de servicios!!.'
+    },
+    {
+      production: "https://www.manuelsamaniego.com.mx/",
+      github: "https://github.com/ManuelsSaNt/portfolio",
+      image: "portfolio.webp",
+      name: "Portafolio web",
+      technologies: ["Angular", "TypeScript", "Sass"],
+      description: 'Portafolio personal para mostrar mis proyectos y dar a conocer mas sobre quien soy, construido en angular y actualizado a Angular 17.'
     }
   ];
 
