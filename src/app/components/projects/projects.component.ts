@@ -10,12 +10,12 @@ export class ProjectsComponent {
 
   projects: Project[] = [
     {
-      production: "https://eltiburonburger.vercel.app/home",
+      production: "https://tiburonburger.vercel.app/home",
       github: "",
       image: "tibuProject.webp",
       name: "El Tiburón Burger web menu",
-      technologies: ["React", "MySQL", "NodeJS", "TypeScript", "Express"],
-      description: 'Menu digital para restaurante, con sistema de administración de productos y sistema de login con usuarios.'
+      technologies: ["Angular", "MySQL", "NodeJS", "TypeScript", "Express", "ZOD", "JWT"],
+      description: 'Menu digital para restaurante, con sistema de administración de productos y recuperacion de los mismos por una API, validaciones con ZOD, logins e implementacion de JSON Web Tokens.'
     },
     {
       production: "",

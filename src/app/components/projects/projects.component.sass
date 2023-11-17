@@ -62,19 +62,21 @@
     width: 100%
     display: flex
 
-    @media (max-width: 912px)
+    @media (max-width: 1124px)
       flex-direction: column
       align-items: center
       justify-content: center
+
     .project-img
-      width: 384px
-      height: 200px
+      width: 54%
       border-radius: 0.5rem
       overflow: hidden
       border-radius: 0.4rem
-      @media (max-width: 912px)
+
+      @media (max-width: 1124px)
         width: 100%
         height: auto
+
       img
         width: 100%
         object-fit: cover
@@ -85,9 +87,10 @@
         border-radius: 0.4rem
         &:hover
           transform: scale(1.1)
+
     .project-text
       position: relative
-      width: 460px
+      width: 46%
       padding-left: 3rem
       font-family: "Rubik", sans-serif
       color: #fff
@@ -96,7 +99,7 @@
       .project-description
         padding: 1rem 0
         font-size: 1rem
-      @media (max-width: 912px)
+      @media (max-width: 1124px)
         padding-top: 1rem
         width: 100%
         padding-left: 0
