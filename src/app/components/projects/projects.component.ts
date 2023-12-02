@@ -42,11 +42,19 @@ export class ProjectsComponent {
       description: 'Sitio web para CyberCafe10m, un cybercafe que se hace notar por su atención al cliente y calidad de servicios!!.'
     },
     {
+      production: "https://ng-todo-sandy.vercel.app/",
+      github: "https://github.com/ManuelsSaNt/ngTodo",
+      image: "ngToDo.webp",
+      name: "ngToDo",
+      technologies: ["Angular", "TypeScript", "HTML", "CSS"],
+      description: 'Proyecto de una lista de tareas construido en su totalidad con Angular y TypeScript utilizando el LocalStorage por medio de un Service.'
+    },
+    {
       production: "https://www.manuelsamaniego.com.mx/",
       github: "https://github.com/ManuelsSaNt/portfolio",
       image: "portfolio.webp",
       name: "Portafolio web",
-      technologies: ["Angular", "TypeScript", "Sass"],
+      technologies: ["Angular", "TypeScript", "HTML", "Sass"],
       description: 'Portafolio personal para mostrar mis proyectos y dar a conocer mas sobre quien soy, construido en angular y actualizado a Angular 17.'
     }
   ];
