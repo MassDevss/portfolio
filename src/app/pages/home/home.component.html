@@ -17,7 +17,9 @@
               <span class="t-5">e</span>
               <span class="t-6">l</span>
             </span>
-            <span class="jump-span" *ngIf="!hideSpace">&nbsp;</span>
+            @if (!hideSpace) {
+              <span class="jump-span">&nbsp;</span>
+            }
             <span class="jump-control">
               <span class="t-7">S</span>
               <span class="t-8">a</span>
@@ -35,12 +37,14 @@
           <h3><span class="developer-span">Desarrollador</span> Full<span class="middle-dash">-</span>Stack</h3>
         </div>
         <div class="techs-flex">
-          <app-tech-card
-            *ngFor="let tech of myTechs"
-            [techName]="tech.name"
-            [techColor]="tech.color"
-          >
-          </app-tech-card>
+          @for (tech of myTechs; track $index) {
+            <app-tech-card
+              [techName]="tech.name"
+              [techColor]="tech.color"
+            >
+            </app-tech-card>
+          }
+
         </div>
       </div>
     </section>
@@ -60,4 +64,3 @@
   <app-contact></app-contact>
 
 </main>
-

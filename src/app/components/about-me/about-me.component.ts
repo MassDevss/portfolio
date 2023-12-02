@@ -10,16 +10,16 @@ export class AboutMeComponent implements OnInit {
   birthDay: Date = new Date('08/30/2004');
   nowDate: Date = new Date();
 
-  acutalAge: number = 0;
+  actualAge: number = 0;
 
   ngOnInit(): void {
 
     const nowYear = this.nowDate.getFullYear();
     const nowMonth = this.nowDate.getMonth();
 
-    this.acutalAge = nowYear - 2004;
+    this.actualAge = nowYear - 2004;
     if (nowMonth < 7)
-      this.acutalAge -= 1
+      this.actualAge -= 1
 
   }
 }

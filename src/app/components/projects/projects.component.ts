@@ -10,32 +10,44 @@ export class ProjectsComponent {
 
   projects: Project[] = [
     {
-      url: "https://eltiburonburger.vercel.app/home",
+      production: "https://tiburonburger.vercel.app/home",
+      github: "",
       image: "tibuProject.webp",
       name: "El Tiburón Burger web menu",
-      technologies: ["React", "MySQL", "NodeJS", "TypeScript", "Express"],
-      description: 'Menu digital para restaurante, con sistema de administración de productos y sistema de login con usuarios.'
+      technologies: ["Angular", "MySQL", "NodeJS", "TypeScript", "Express", "ZOD", "JWT"],
+      description: 'Menu digital para restaurante, con sistema de administración de productos y recuperacion de los mismos por una API, validaciones con ZOD, logins e implementacion de JSON Web Tokens.'
     },
     {
-      url: "https://github.com/ManuelsSaNt/TiburonPVETs",
+      production: "",
+      github: "https://github.com/ManuelsSaNt/TiburonPVETs",
       image: "tiburon_sp.webp",
       name: "El Tiburón Burger Punto de venta",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Nodejs", "Electron", "MySQL"],
       description: 'Punto de venta para restaurante, con sistema de administración de productos, registro de productos y clientes en el sistema.'
     },
     {
-      url: "https://labstudiomedia.com",
+      production: "https://labstudiomedia.com",
+      github: "",
       image: "labstudiomedia.webp",
       name: "LabStudioMedia.com",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
       description: 'Sitio web para empresa de marketing digital, diseño y desarrollo web.'
     },
     {
-      url: "https://www.cybercafe10m.com",
+      production: "https://www.cybercafe10m.com",
+      github: "",
       image: "cybercafe10m.webp",
       name: "CyberCafe10M.com",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
       description: 'Sitio web para CyberCafe10m, un cybercafe que se hace notar por su atención al cliente y calidad de servicios!!.'
+    },
+    {
+      production: "https://www.manuelsamaniego.com.mx/",
+      github: "https://github.com/ManuelsSaNt/portfolio",
+      image: "portfolio.webp",
+      name: "Portafolio web",
+      technologies: ["Angular", "TypeScript", "Sass"],
+      description: 'Portafolio personal para mostrar mis proyectos y dar a conocer mas sobre quien soy, construido en angular y actualizado a Angular 17.'
     }
   ];
 

@@ -7,9 +7,7 @@ import { AfterViewInit, Component, Input } from '@angular/core';
 })
 export class NavComponent {
 
-  constructor(private viewportScroller: ViewportScroller){
-
-  }
+  constructor(private viewportScroller: ViewportScroller){ }
 
   scrollTo(id: string){
     this.viewportScroller.scrollToAnchor(id);
