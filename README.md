@@ -5,8 +5,21 @@ fue creado en Angular y actualmente esta en su ultima version Angular 17.
 
 ![Foto del portafolio personal](src/assets/images/projects/portfolio.webp)
 
-### tecnologias
-<img src="src/assets/images/tech-icons/angular.png" width="80">
-<img src="src/assets/images/tech-icons/html.png" width="80">
-<img src="src/assets/images/tech-icons/css.png" width="74">
-<img src="src/assets/images/tech-icons/typescript.png" width="73">
+## tecnologías
+
+<img
+src="src/assets/images/tech-icons/angular.png"
+width="80"
+>
+<img
+src="src/assets/images/tech-icons/html.png"
+width="80"
+>
+<img
+src="src/assets/images/tech-icons/css.png"
+width="74"
+>
+<img
+src="src/assets/images/tech-icons/typescript.png"
+width="73"
+>
