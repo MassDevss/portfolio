@@ -1,5 +1,5 @@
 
-import { Component, Input,  OnInit, Renderer2, ElementRef, AfterViewInit, OnDestroy, ViewChild } from '@angular/core';
+import { Component, Input,  OnInit, ElementRef, AfterViewInit, OnDestroy, ViewChild } from '@angular/core';
 
 
 @Component({
@@ -24,8 +24,6 @@ export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
 
   interval: any = null;
 
-  constructor(private renderer: Renderer2, private elementRef: ElementRef) { }
-
   swapColors(): void {
     this.toBodyColor = this.techColor;
     this.toUseColor = this.techColor;
@@ -36,34 +34,16 @@ export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
     this.toUseColor = '#fff';
   }
 
-  callback = (entries: IntersectionObserverEntry[], observer: IntersectionObserver) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-
-        // lo que quiers ejecutar
-
-        }
-      });
-    };
-
-  ngOnInit() {
+  ngOnInit(): void {
 
     setTimeout(() => {
       this.swapColors()
-    }, 500)
+    }, 500);
 
     setTimeout(() => {
       this.outColors()
-    },1500)
+    },1500);
 
-    // const options = {
-    //   root: null, // El viewport
-    //   rootMargin: '0px', // Margen alrededor del viewport
-    //   threshold: 0.5 // Umbral de visibilidad
-    // };
-
-    // const observer = new IntersectionObserver(this.callback, options);
-    // observer.observe(this.elementRef.nativeElement);
   }
 
   ngAfterViewInit(): void {
