@@ -27,6 +27,7 @@
     justify-content: center
     align-items: center
     flex-direction: column
+    flex-wrap: wrap
 
   .projects-title
     width: 100%
@@ -47,10 +48,11 @@
 
   .project-cards-wrap
     display: flex
-    flex-direction: column
+    flex-direction: row
+    flex-wrap: wrap
     justify-content: center
-    align-items: center
-    width: 90%
+    align-items: stretch
+    width: 100%
     gap: 1rem
 
 .project-card-main-new
@@ -60,54 +62,49 @@
 
   .project-card-wrap
     width: 100%
+    height: 100%
     display: flex
-
-    @media (max-width: 1124px)
-      flex-direction: column
-      align-items: center
-      justify-content: center
+    flex-direction: column
+    align-items: center
+    justify-content: flex-start
 
     .project-img
-      width: 54%
+      width: 100%
+      height: auto
       border-radius: 0.5rem
       overflow: hidden
       border-radius: 0.4rem
-
-      @media (max-width: 1124px)
-        width: 100%
-        height: auto
 
       img
         width: 100%
         object-fit: cover
         border-radius: 0.5rem
-        transition-property: transform
-        transition-duration: 0.6s
-        transform: scale(1)
         border-radius: 0.4rem
-        &:hover
-          transform: scale(1.1)
+
 
     .project-text
+      display: flex
+      flex-direction: column
       position: relative
-      width: 46%
-      padding-left: 3rem
+      width: 100%
       font-family: "Rubik", sans-serif
       color: #fff
+
       .project-title
         font-size: 1.5rem
+
       .project-description
-        padding: 1rem 0
         font-size: 1rem
-      @media (max-width: 1124px)
         padding-top: 1rem
         width: 100%
         padding-left: 0
+
       @media (max-width: 508px)
         .project-title
           font-size: 1.3rem
 
 .build-technologies
+  margin: 1rem 0
   display: flex
   flex-wrap: wrap
   align-items: center
@@ -123,15 +120,16 @@
       font-size: 0.9rem
 
 .deploy-links
+  width: 100%
   display: flex
   justify-content: flex-end
   gap: 1rem
-  margin-top: 1rem
+  margin-top: auto
 
   a
     border-radius: 0.3rem
     text-decoration: none
-    width: 2.2rem
+    flex: 1
     height: 2.2rem
     font-weight: bold
     transition-property: background-color
@@ -159,3 +157,20 @@
 
     &:hover
       background-color: #1c1c1c
+
+.card-project-body
+  width: 500px
+  padding: 1rem 1.5rem
+
+  @media (max-width: 1115px)
+    width: 76%
+
+  @media (max-width: 612px)
+    width: 400px
+
+  @media (max-width: 508px)
+    width: 80%
+
+  @media (max-width: 412px)
+    width: 280px
+    padding: 1.8rem

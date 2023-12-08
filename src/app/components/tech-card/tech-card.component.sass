@@ -1,9 +1,6 @@
 
 $time: 0.8s
 
-.simulateHover
-  transform: skew(0deg, 1deg) scale(1.05) !important
-
 .card-body
   margin: 1rem
   width: 40px
@@ -14,9 +11,8 @@ $time: 0.8s
   text-align: center
   flex-direction: column
   padding: 0.5rem
-  transition-property: box-shadow, transform
+  transition-property: box-shadow
   transition-duration: $time
-  transform: skew(0deg, 0deg) scale(1)
   background-color: rgb(101 101 101 / 13%)
   border-radius: 0.45rem
   backdrop-filter: blur(7.7px)
@@ -26,9 +22,6 @@ $time: 0.8s
   @media (max-width: 527px)
     width: 36px
     margin: 0.7rem
-
-  &:hover
-    transform: skew(0deg, 1deg) scale(1.05)
 
   .tech-ico
     display: flex
