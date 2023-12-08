@@ -23,7 +23,7 @@ export class ProjectsComponent {
       image: "tiburon_sp.webp",
       name: "El Tiburón Burger Punto de venta",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap", "Nodejs", "Electron", "MySQL"],
-      description: 'Punto de venta para restaurante, con sistema de administración de productos, registro de productos y clientes en el sistema.'
+      description: 'Punto de venta para un negocio familiar construido con tecnologías web, usa impresora térmica, y una base de datos para guardar productos, clientes y un registro de ordenes del sistema.'
     },
     {
       production: "https://labstudiomedia.com",
@@ -31,7 +31,7 @@ export class ProjectsComponent {
       image: "labstudiomedia.webp",
       name: "LabStudioMedia.com",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      description: 'Sitio web para empresa de marketing digital, diseño y desarrollo web.'
+      description: 'Landing page para una empresa de desarrollo de productos digitales, branding y marketing, muestra una pequeña colección de sus servicios utilizando unas tarjetas con los mismos.'
     },
     {
       production: "https://www.cybercafe10m.com",
@@ -39,7 +39,7 @@ export class ProjectsComponent {
       image: "cybercafe10m.webp",
       name: "CyberCafe10M.com",
       technologies: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-      description: 'Sitio web para CyberCafe10m, un cybercafe que se hace notar por su atención al cliente y calidad de servicios!!.'
+      description: 'Landing page para CyberCafe10m, un cybercafe dedicado a soluciones para sus clientes relacionadas con tramites, la pagina incluye una vista de algunos de sus servicios.'
     },
     {
       production: "https://ng-todo-sandy.vercel.app/",
@@ -47,7 +47,7 @@ export class ProjectsComponent {
       image: "ngToDo.webp",
       name: "ngToDo",
       technologies: ["Angular", "TypeScript", "HTML", "CSS"],
-      description: 'Proyecto de una lista de tareas construido en su totalidad con Angular y TypeScript utilizando el LocalStorage por medio de un Service.'
+      description: 'El clásico proyecto de una lista de tareas construido en su totalidad con Angular y TypeScript utilizando el LocalStorage para almacenar la información de las tareas.'
     },
     {
       production: "https://www.manuelsamaniego.com.mx/",
