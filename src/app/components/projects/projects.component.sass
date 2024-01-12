@@ -46,14 +46,25 @@
       @media (max-width: 868px)
         font-size: 2rem
 
+  .center-projects
+    display: flex
+    justify-content: center
+
   .project-cards-wrap
     display: flex
     flex-direction: row
     flex-wrap: wrap
-    justify-content: center
+    justify-content: flex-start
     align-items: stretch
-    width: 100%
+    width: calc(1650px + 2rem)
     gap: 1rem
+
+    @media (max-width: 1720px)
+      width: calc(1100px + 1rem)
+
+    @media (max-width: 1140px)
+      width: 100%
+      justify-content: center
 
 .project-card-main-new
   @include blackGlass()
@@ -71,14 +82,12 @@
     .project-img
       width: 100%
       height: auto
-      border-radius: 0.5rem
       overflow: hidden
       border-radius: 0.4rem
 
       img
         width: 100%
         object-fit: cover
-        border-radius: 0.5rem
         border-radius: 0.4rem
 
 
@@ -162,7 +171,7 @@
   width: 500px
   padding: 1rem 1.5rem
 
-  @media (max-width: 1115px)
+  @media (max-width: 1140px)
     width: 76%
 
   @media (max-width: 612px)

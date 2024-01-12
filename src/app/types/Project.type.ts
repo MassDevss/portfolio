@@ -1,5 +1,4 @@
 
-
 export type Project = {
   image: string;
   name: string;
@@ -8,4 +7,3 @@ export type Project = {
   github?: string;
   production?: string;
 }
-

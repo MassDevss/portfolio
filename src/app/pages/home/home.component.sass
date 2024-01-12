@@ -1,4 +1,50 @@
 
+// nav
+.portfolio-navbar
+  width: 100%
+  padding: 0.1rem 0
+  height: 4.2rem
+  display: flex
+  align-items: center
+  justify-content: flex-start
+  gap: 2rem
+
+  background: rgba(38, 38, 38, 0.13)
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+  backdrop-filter: blur(7.7px)
+  -webkit-backdrop-filter: blur(7.7px)
+  border-bottom: 1px solid rgba(77, 77, 77, 0.5)
+
+  & button:first-child
+    margin-left: 1rem
+
+  @media (max-width: 460px)
+    gap: 1rem
+
+
+.intern-link:first-child
+  margin-left: 2rem
+
+  @media (max-width: 460px)
+    margin-left: 1rem
+
+.rounded-btn
+  background-color: transparent
+  transition-property: letter-spacing, color, border
+  transition-duration: 0.2s
+  color: #dcdcdc
+  cursor: pointer
+  font-size: 18px
+  font-family: 'Roboto', sans-serif
+  text-align: center
+  padding: 0.5rem 0.8rem
+  border-radius: 30px
+  border: 2px solid rgb(192, 176, 255)
+
+  &:hover
+    color: #ffffff
+    border: 2px solid #714bff
+
 @keyframes flicker
   0%
     color: #fff
@@ -54,12 +100,18 @@
 
     svg
       fill: #fff
-      background: rgba(38, 38, 38, 0.13)
-      border-radius: 0.45rem
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
-      backdrop-filter: blur(7.7px)
-      -webkit-backdrop-filter: blur(7.7px)
-      border: 1px solid rgba(77, 77, 77, 0.5)
+      background-color: transparent
+      transition-property: border, fill
+      transition-duration: 0.2s
+      cursor: pointer
+      padding: 0.1rem 0.2rem
+      border-radius: 6px
+      border: 2px solid rgb(192, 176, 255)
+
+      &:hover
+        fill: #a087ff
+        color: #ffffff
+        border: 2px solid #714bff
 
 .intro
   display: flex
