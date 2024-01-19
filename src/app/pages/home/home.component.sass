@@ -1,5 +1,4 @@
 
-// nav
 .portfolio-navbar
   width: 100%
   padding: 0.1rem 0
@@ -129,9 +128,6 @@
     transition-property: margin-top
     transition-duration: 1s
 
-    @media (max-width: 1400px)
-      width: 100%
-
 .title-h-wrap
   color: #fff
   font-size: 80px
@@ -142,32 +138,40 @@
   flex-wrap: wrap
 
   .jump-span
+    display: inline
     border-bottom: 1px solid #fff
     @include jumpAnimation(0.8s)
 
-  .jump-control
-
     @media (max-width: 772px)
-      width: 100%
+      // display: none
+
+  .jump-control
+    @media (max-width: 772px)
+      // width: 100%
 
     span
       border-bottom: 1px solid #fff
 
-  @media (max-width: 772px)
+  @media (max-width: 1100px)
     font-size: 70px
     margin-bottom: 1rem
 
-  @media (max-width: 576px)
+  @media (max-width: 912px)
     font-size: 60px
 
-  @media (max-width: 458px)
-    margin-top: 2rem
-
-  @media (max-width: 420px)
+  @media (max-width: 800px)
     font-size: 55px
 
-  @media (max-width: 364px)
-    font-size: 50px
+  @media (max-width: 774px)
+    font-size: 48px
+
+  @media (max-width: 516px)
+    font-size: 40px
+    margin-bottom: 0.5rem
+
+  @media (max-width: 412px)
+    font-size: 35px
+
 
 .sub-title
   margin-top: 10px
@@ -185,14 +189,18 @@
 .sub-title h3
   font-weight: 600
 
-  @media (max-width: 576px)
+  @media (max-width: 1100px)
     font-size: 28px
 
-  @media (max-width: 420px)
+  @media (max-width: 912px)
     font-size: 24px
 
-  @media (max-width: 364px)
+  @media (max-width: 800px)
     font-size: 22px
+
+  @media (max-width: 412px)
+    font-size: 18px
+
 
 .t-1
   @include jumpAnimation(0.2s)

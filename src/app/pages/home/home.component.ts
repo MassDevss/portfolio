@@ -9,10 +9,7 @@ import {Tech} from 'src/app/types/Tech.type';
 })
 export class HomeComponent {
 
-  hideSpace: boolean = false;
-
-  constructor(private viewportScroller: ViewportScroller) {
-  }
+  constructor(private viewportScroller: ViewportScroller) {}
 
   myTechs: Tech[] = [
     { name: "HTML", color: "#e44f26" },
@@ -27,14 +24,6 @@ export class HomeComponent {
     { name: "TypeScript", color: "#007acc" },
     { name: "Bash", color: "#2f3a3e" },
   ];
-
-  ngOnInit() {
-    this.hideSpace = window.innerWidth <= 772;
-
-    window.addEventListener('resize', () => {
-      this.hideSpace = window.innerWidth <= 772;
-    })
-  }
 
   scrollTo(id: string) {
     this.viewportScroller.scrollToAnchor(id);
