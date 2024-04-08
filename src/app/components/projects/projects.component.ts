@@ -9,14 +9,14 @@ import { Project } from 'src/app/types/Project.type';
 export class ProjectsComponent {
 
   projects: Project[] = [
-    {
-      production: "https://tiburonburger.vercel.app/home",
-      github: "",
-      image: "tibuProject.webp",
-      name: "El Tiburón Burger web menu",
-      technologies: ["Angular", "MySQL", "NodeJS", "TypeScript", "Express", "ZOD", "JWT"],
-      description: 'Menu digital para restaurante, con sistema de administración de productos y recuperacion de los mismos por una API, validaciones con ZOD, logins e implementacion de JSON Web Tokens.'
-    },
+    // {
+    //   production: "https://tiburonburger.vercel.app/home",
+    //   github: "",
+    //   image: "tibuProject.webp",
+    //   name: "El Tiburón Burger web menu",
+    //   technologies: ["Angular", "MySQL", "NodeJS", "TypeScript", "Express", "ZOD", "JWT"],
+    //   description: 'Menu digital para restaurante, con sistema de administración de productos y recuperacion de los mismos por una API, validaciones con ZOD, logins e implementacion de JSON Web Tokens.'
+    // },
     {
       production: "",
       github: "https://github.com/ManuelsSaNt/TiburonPVETs",
