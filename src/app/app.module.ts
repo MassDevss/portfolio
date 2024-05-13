@@ -4,8 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import {NgOptimizedImage} from "@angular/common";
-import { AboutMeComponent } from './components/about-me/about-me.component';
+import { NgOptimizedImage } from "@angular/common";
 import { TextBoxComponent } from './components/text-box/text-box.component';
 import { TechCardComponent } from './components/tech-card/tech-card.component';
 import { ProjectsComponent } from './components/projects/projects.component';
@@ -17,7 +16,6 @@ import { RouterModule } from '@angular/router';
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutMeComponent,
     TextBoxComponent,
     TechCardComponent,
     ProjectsComponent,

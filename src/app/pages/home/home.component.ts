@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ViewportScroller} from '@angular/common';
 import {Tech} from 'src/app/types/Tech.type';
 
@@ -7,9 +7,14 @@ import {Tech} from 'src/app/types/Tech.type';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.sass']
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
 
   constructor(private viewportScroller: ViewportScroller) {}
+
+  birthDay: Date = new Date('08/30/2004');
+  nowDate: Date = new Date();
+
+  actualAge: number = 0;
 
   myTechs: Tech[] = [
     { name: "HTML", color: "#e44f26" },
@@ -21,12 +26,20 @@ export class HomeComponent {
     { name: "Express", color: "#000000" },
     { name: "MySql", color: "#0083a0" },
     { name: "PostgreSQL", color: "#0083a0" },
-    { name: "TypeScript", color: "#007acc" },
-    { name: "Bash", color: "#2f3a3e" },
+    { name: "TypeScript", color: "#007acc" }
   ];
 
   scrollTo(id: string) {
     this.viewportScroller.scrollToAnchor(id);
+  }
+
+  ngOnInit(): void {
+    const nowYear = this.nowDate.getFullYear();
+    const nowMonth = this.nowDate.getMonth();
+
+    this.actualAge = nowYear - 2004;
+    if (nowMonth < 7)
+      this.actualAge -= 1
   }
 
 }
