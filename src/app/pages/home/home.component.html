@@ -9,9 +9,9 @@
   <div class="intro-wrap">
     <section class="intro">
       <div class="main-intro">
-        <div class="title-wrapper animate__animated animate__fadeIn">
+        <div class="animate__animated animate__fadeIn">
           <h1 class="title-h-wrap">
-            <span class="jump-control">
+            <span>
               <span class="t-1">M</span>
               <span class="t-2">a</span>
               <span class="t-3">n</span>
@@ -20,7 +20,7 @@
               <span class="t-6">l</span>
             </span>
             <span class="jump-span">&nbsp;</span>
-            <span class="jump-control">
+            <span>
               <span class="t-7">S</span>
               <span class="t-8">a</span>
               <span class="t-9">m</span>
@@ -34,11 +34,12 @@
           </h1>
         </div>
         <div class="sub-title animate__animated animate__fadeIn">
-          <h3><span class="developer-span">Desarrollador</span> Full<span class="middle-dash">-</span>Stack</h3>
+          <h3><span class="developer-span">Desarrollador</span> full<span class="middle-dash">-</span>stack</h3>
         </div>
         <div class="techs-flex">
           @for (tech of myTechs; track $index) {
             <app-tech-card
+              [delay]="$index / 4"
               [techName]="tech.name"
               [techColor]="tech.color"
             ></app-tech-card>
@@ -46,11 +47,7 @@
         </div>
       </div>
     </section>
-    <div class="arrow-down" (click)="scrollTo('content-wrap')">
-      <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" fill="#fff" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-      </svg>
-    </div>
+  
   </div>
 
   <div id="content-wrap" class="content-wrap">

@@ -13,6 +13,9 @@ export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
   cardElem: ElementRef<HTMLDivElement> | undefined;
 
   @Input()
+  delay: number = 0;
+
+  @Input()
   techName: string = '';
 
   @Input()
@@ -38,11 +41,11 @@ export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
 
     setTimeout(() => {
       this.swapColors()
-    }, 500);
+    }, this.delay * 1000);
 
     setTimeout(() => {
       this.outColors()
-    },1500);
+    }, this.delay * 1000 + 500);
 
   }
 
@@ -64,7 +67,7 @@ export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
         },1500)
       }
 
-    }, 1500)
+    }, 3500)
   }
 
   ngOnDestroy(): void {

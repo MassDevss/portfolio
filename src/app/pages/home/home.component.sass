@@ -38,19 +38,11 @@
   text-align: center
   padding: 0.5rem 0.8rem
   border-radius: 30px
-  border: 2px solid rgb(192, 176, 255)
+  border: 2px solid rgb(91 60 213)
 
   &:hover
     color: #ffffff
     border: 2px solid #714bff
-
-@keyframes flicker
-  0%
-    color: #fff
-  50%
-    color: rgb(116, 84, 210)
-  100%
-    color: #fff
 
 @keyframes jump
   0%
@@ -73,41 +65,13 @@
   min-height: 100vh
 
 .intro-wrap
-  min-height: calc(100vh - 4.2rem)
+  min-height: calc(70vh - 4.2rem)
   width: 100%
   display: flex
+  background: #141414
   flex-direction: column
   justify-content: center
   align-items: center
-
-  .arrow-down
-    position: absolute
-    bottom: 8rem
-    display: flex
-    justify-content: center
-    align-items: center
-    cursor: pointer
-
-    @media (max-height: 828px)
-      bottom: 6rem
-
-    @media (max-height: 722px)
-      bottom: 5rem
-
-    svg
-      fill: #fff
-      background-color: transparent
-      transition-property: border, fill
-      transition-duration: 0.2s
-      cursor: pointer
-      padding: 0.1rem 0.2rem
-      border-radius: 6px
-      border: 2px solid rgb(192, 176, 255)
-
-      &:hover
-        fill: #a087ff
-        color: #ffffff
-        border: 2px solid #714bff
 
 .intro
   display: flex
@@ -118,7 +82,6 @@
   transition-duration: 1s
   flex-direction: column
   position: relative
-  top: -6rem
 
   .main-intro
     font-family: 'Inconsolata', monospace
@@ -139,22 +102,13 @@
 
   .jump-span
     display: inline
-    border-bottom: 1px solid #fff
     @include jumpAnimation(0.8s)
-
-    @media (max-width: 772px)
-      // display: none
-
-  .jump-control
-    @media (max-width: 772px)
-      // width: 100%
 
     span
       border-bottom: 1px solid #fff
 
   @media (max-width: 1100px)
     font-size: 70px
-    margin-bottom: 1rem
 
   @media (max-width: 912px)
     font-size: 60px
@@ -174,17 +128,13 @@
 
 
 .sub-title
-  margin-top: 10px
   color: #fff
   font-size: 30px
   font-weight: 400
   font-family: 'Sometype Mono', monospace
 
   .developer-span
-    animation-name: flicker
-    animation-duration: 4s
-    animation-iteration-count: infinite
-    animation-delay: 2s
+    color: rgb(91, 60, 213)
 
 .sub-title h3
   font-weight: 600
