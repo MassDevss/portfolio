@@ -7,9 +7,10 @@
       <div class="project-cards-wrap">
 
         @for (project of projects; track $index){
+
           <div class="project-card-main-new card-project-body">
             <div class="project-card-wrap">
-              <div target="_blank" class="project-img">
+              <div class="project-img">
                 <img src="./assets/images/projects/{{ project.image }}" alt="">
               </div>
               <div class="project-text">
@@ -37,6 +38,7 @@
               </div>
             </div>
           </div>
+
         }
 
       </div>

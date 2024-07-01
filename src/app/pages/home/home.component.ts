@@ -11,7 +11,6 @@ export class HomeComponent implements OnInit {
 
   constructor(private viewportScroller: ViewportScroller) {}
 
-  birthDay: Date = new Date('08/30/2004');
   nowDate: Date = new Date();
 
   actualAge: number = 0;
@@ -25,7 +24,7 @@ export class HomeComponent implements OnInit {
     { name: "NodeJs", color: "#62b346" },
     { name: "Express", color: "#000000" },
     { name: "MySql", color: "#0083a0" },
-    { name: "PostgreSQL", color: "#0083a0" },
+    { name: "PostgresSQL", color: "#0083a0" },
     { name: "TypeScript", color: "#007acc" }
   ];
 

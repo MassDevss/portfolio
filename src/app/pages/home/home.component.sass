@@ -7,25 +7,13 @@
   align-items: center
   justify-content: flex-start
   gap: 2rem
-
-  background: rgba(38, 38, 38, 0.13)
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
-  backdrop-filter: blur(7.7px)
-  -webkit-backdrop-filter: blur(7.7px)
-  border-bottom: 1px solid rgba(77, 77, 77, 0.5)
+  background: #111111
 
   & button:first-child
     margin-left: 1rem
 
   @media (max-width: 460px)
     gap: 1rem
-
-
-.intern-link:first-child
-  margin-left: 2rem
-
-  @media (max-width: 460px)
-    margin-left: 1rem
 
 .rounded-btn
   background-color: transparent
@@ -46,11 +34,11 @@
 
 @keyframes jump
   0%
-    bottom: 0rem
+    bottom: 0
   50%
     bottom: 1.2rem
   100%
-    bottom: 0rem
+    bottom: 0
 
 @mixin jumpAnimation($time)
   animation-name: jump
@@ -68,7 +56,7 @@
   min-height: calc(70vh - 4.2rem)
   width: 100%
   display: flex
-  background: #141414
+  background: #111111
   flex-direction: column
   justify-content: center
   align-items: center
@@ -211,6 +199,9 @@
   flex-direction: column
   align-items: center
 
+.content-wrap
+  background-color: #0f0f0f
+
 .info-wrap
   width: 100%
   display: flex
@@ -218,3 +209,46 @@
   align-items: center
   flex-wrap: wrap
   flex-direction: column
+
+
+.text-box-container
+  margin-bottom: 3rem
+  position: relative
+  bottom: 0
+  transition-property: box-shadow, bottom
+  transition-duration: 0.5s
+  background: rgba(38, 38, 38, 0.13)
+  border-radius: 16px
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1)
+  backdrop-filter: blur(7.7px)
+  -webkit-backdrop-filter: blur(7.7px)
+  border: 1px solid rgba(77, 77, 77, 0.5)
+
+.text-box-wrap
+  margin-top: 10px
+  margin-bottom: 10px
+
+.text-box-title
+  padding-bottom: 0.5rem
+
+  h3
+    color: #fff
+    font-size: 2.2rem
+    font-family: "Sometype Mono", monospace
+    font-weight: 600
+
+    @media (max-width: 868px)
+      font-size: 1.8rem
+
+
+.text-box-content
+  margin-top: 0.4rem
+
+  p
+    color: #fff
+    font-family: 'Rubik', sans-serif
+    font-weight: 400
+    font-size: 1.2rem
+
+    @media (max-width: 404px)
+      font-size: 1rem
