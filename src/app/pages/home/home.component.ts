@@ -19,7 +19,6 @@ export class HomeComponent implements OnInit {
     { name: "HTML", color: "#e44f26" },
     { name: "CSS", color: "#264de4",},
     { name: "JavaScript", color: "#f1dc50",},
-    { name: "React", color: "#00d7fd",},
     { name: "Angular", color: "#dc0030",},
     { name: "NodeJs", color: "#62b346" },
     { name: "Express", color: "#000000" },
