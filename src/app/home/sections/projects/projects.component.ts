@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Project } from 'src/app/types/Project.type';
+import { Project } from '../../types/Project.type';
 
 @Component({
   selector: 'app-projects',
