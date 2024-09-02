@@ -1,16 +1,17 @@
 
 .portfolio-navbar
   width: 100%
-  padding: 0.1rem 0
-  height: 4.2rem
   display: flex
   align-items: center
-  justify-content: flex-start
-  gap: 2rem
-  background: #0000001a
+  justify-content: center
 
-  & button:first-child
-    margin-left: 1rem
+.btn-wrapper
+  display: flex
+  align-items: center
+  padding: 2rem 4rem
+  justify-content: flex-end
+  gap: 1.4rem
+  width: calc(100% - 4rem)
 
   @media (max-width: 460px)
     gap: 1rem
@@ -49,16 +50,12 @@
   transition-property: bottom, opacity
   transition-duration: 0.2s
 
-.main-home
-  min-height: 100vh
-
 .intro-wrap
   border-bottom-right-radius: 10%
   border-bottom-left-radius: 10%
   min-height: calc(70vh - 4.2rem)
   width: 100%
   display: flex
-  background: #0000001a
   flex-direction: column
   justify-content: center
   align-items: center

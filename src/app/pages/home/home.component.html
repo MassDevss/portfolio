@@ -1,10 +1,12 @@
 
 <nav class="portfolio-navbar">
-  <button class="rounded-btn animate__animated animate__slideInDown" (click)="scrollTo('about-section')">Sobre mi</button>
-  <button class="rounded-btn animate__animated animate__slideInDown" (click)="scrollTo('contact-section')">Contacto</button>
+  <div class="btn-wrapper">
+    <button class="rounded-btn animate__animated animate__slideInDown" (click)="scrollTo('about-section')">Sobre mi</button>
+    <button class="rounded-btn animate__animated animate__slideInDown" (click)="scrollTo('contact-section')">Contacto</button>
+  </div>
 </nav>
 
-<main class="main-home">
+<main>
 
   <div class="intro-wrap">
     <section class="intro">
@@ -57,7 +59,7 @@
         <article class="text-box-container card-content">
           <div class="text-box-wrap">
             <div class="text-box-title">
-              <h3 class="underline"> ¿Quien soy? </h3>
+              <h3> ¿Quien soy? </h3>
             </div>
             <div class="text-box-content">
               <p>Soy un entusiasta desarrollador web autodidacta de {{ actualAge }} años, actualmente estudiando Ingeniería de Software en la universidad. Inicialmente cocinero, mi fascinación por la tecnología me llevó a la programación. Me especializo en desarrollo web Full-Stack y he trabajado como Freelancer en proyectos que incluyen páginas web simples y aplicaciones. Puedes revisar algunos de mis proyectos aquí ;) Busco continuamente aprender nuevas tecnologías y estoy emocionado por enfrentar nuevos desafíos en el desarrollo web.</p>
