@@ -16,15 +16,15 @@ export class HomeComponent implements OnInit {
   actualAge: number = 0;
 
   myTechs: Tech[] = [
-    { name: "HTML", color: "#e44f26" },
-    { name: "CSS", color: "#264de4",},
-    { name: "JavaScript", color: "#f1dc50",},
-    { name: "Angular", color: "#dc0030",},
-    { name: "NodeJs", color: "#62b346" },
-    { name: "Express", color: "#000000" },
-    { name: "MySql", color: "#0083a0" },
-    { name: "PostgresSQL", color: "#0083a0" },
-    { name: "TypeScript", color: "#007acc" }
+    { name: 'HTML', color: '#e44f26' },
+    { name: 'CSS', color: '#264de4',},
+    { name: 'JavaScript', color: '#f1dc50',},
+    { name: 'Angular', color: '#dc0030',},
+    { name: 'NodeJs', color: '#62b346' },
+    { name: 'Express', color: '#000000' },
+    { name: 'MySql', color: '#0083a0' },
+    { name: 'PostgresSQL', color: '#0083a0' },
+    { name: 'TypeScript', color: '#007acc' }
   ];
 
   scrollTo(id: string) {

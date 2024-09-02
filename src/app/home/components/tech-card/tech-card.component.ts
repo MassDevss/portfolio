@@ -25,7 +25,7 @@ export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
 
   toBodyColor: string = '#131313';
 
-  interval: any = null;
+  interval: ReturnType<typeof setInterval> | null = null;
 
   swapColors(): void {
     this.toBodyColor = this.techColor;
@@ -71,7 +71,7 @@ export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
   }
 
   ngOnDestroy(): void {
-    clearInterval(this.interval);
+    clearInterval(this.interval!);
     this.interval = null;
   }
 
