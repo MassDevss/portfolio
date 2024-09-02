@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {ViewportScroller} from '@angular/common';
-import {Tech} from 'src/app/types/Tech.type';
+import {Tech} from '../../types/Tech.type';
 
 @Component({
   selector: 'app-home',
