@@ -3,9 +3,10 @@ import {ViewportScroller} from '@angular/common';
 import {Tech} from 'src/app/types/Tech.type';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.sass']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.sass'],
+    standalone: false
 })
 export class HomeComponent implements OnInit {
 

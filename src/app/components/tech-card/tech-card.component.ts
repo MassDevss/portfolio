@@ -3,9 +3,10 @@ import { Component, Input,  OnInit, ElementRef, AfterViewInit, OnDestroy, ViewCh
 
 
 @Component({
-  selector: 'app-tech-card',
-  templateUrl: './tech-card.component.html',
-  styleUrls: ['./tech-card.component.sass']
+    selector: 'app-tech-card',
+    templateUrl: './tech-card.component.html',
+    styleUrls: ['./tech-card.component.sass'],
+    standalone: false
 })
 export class TechCardComponent implements OnInit, AfterViewInit, OnDestroy{
 
